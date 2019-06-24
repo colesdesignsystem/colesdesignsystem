@@ -6,8 +6,8 @@
     <meta name="description" content="Basic HTML5 template">
     <meta name="author" content="My Name">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="/assets/rocket.font.css">
-    <link rel="stylesheet" type="text/css" href="/assets/rocket.css">
+    <link rel="stylesheet" type="text/css" href="/assets/rocket/css/rocket.font.css">
+    <link id="__rocket-stylesheet" rel="stylesheet" type="text/css" href="/assets/rocket/css/rocket.css">
     <link rel="stylesheet" type="text/css" href="/assets/styles.css">
   </head>
   <body>
@@ -24,15 +24,15 @@
       <main class="__main">
         <div class="__main__side-nav">
           <div class="__side-nav__select-brand">
-            <select class="rocket__select" aria-label="Select brand">
-              <option class="rocket__option">Coles</option>
-              <option class="rocket__option">flybuys</option>
+            <select class="rocket__select" id="__select-brand" aria-label="Select brand">
+              <option class="rocket__option" value="coles">Coles</option>
+              <option class="rocket__option" value="flybuys">flybuys</option>
             </select>
           </div>
           <div class="__side-nav__menu">
             <nav class="rocket__menu">
               <div class="rocket__menu__item"><a class="rocket__menu__title" href="/get-started.html">Get Started</a></div>
-              <div class="rocket__menu__item"><a class="rocket__menu__title" href="/accessbility.html">Accessbility</a></div>
+              <div class="rocket__menu__item"><a class="rocket__menu__title" href="/accessibility.html">Accessibility</a></div>
               <div class="rocket__menu__item"><a class="rocket__menu__title" href="/style.html">Style</a>
                 <div class="rocket__menu__content"></div>
                 <nav class="rocket__submenu">
@@ -107,5 +107,6 @@
         </div>
       </main>
     </div>
+    <script src="/assets/scripts.js"></script>
   </body>
 </html>

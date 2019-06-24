@@ -728,6 +728,7 @@
   box-sizing: border-box;
   text-align: center;
   box-shadow: none;
+  text-decoration: none;
 }
 .rocket__button__icon {
   width: 24px;

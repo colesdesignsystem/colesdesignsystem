@@ -6,8 +6,8 @@
     <meta name="description" content="Basic HTML5 template">
     <meta name="author" content="My Name">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="/assets/rocket.font.css">
-    <link rel="stylesheet" type="text/css" href="/assets/rocket.css">
+    <link rel="stylesheet" type="text/css" href="/assets/rocket/css/rocket.font.css">
+    <link id="__rocket-stylesheet" rel="stylesheet" type="text/css" href="/assets/rocket/css/rocket.css">
     <link rel="stylesheet" type="text/css" href="/assets/styles.css">
   </head>
   <body>
@@ -24,15 +24,15 @@
       <main class="__main">
         <div class="__main__side-nav">
           <div class="__side-nav__select-brand">
-            <select class="rocket__select" aria-label="Select brand">
-              <option class="rocket__option">Coles</option>
-              <option class="rocket__option">flybuys</option>
+            <select class="rocket__select" id="__select-brand" aria-label="Select brand">
+              <option class="rocket__option" value="coles">Coles</option>
+              <option class="rocket__option" value="flybuys">flybuys</option>
             </select>
           </div>
           <div class="__side-nav__menu">
             <nav class="rocket__menu">
               <div class="rocket__menu__item"><a class="rocket__menu__title" href="/get-started.html">Get Started</a></div>
-              <div class="rocket__menu__item"><a class="rocket__menu__title" href="/accessbility.html">Accessbility</a></div>
+              <div class="rocket__menu__item"><a class="rocket__menu__title" href="/accessibility.html">Accessibility</a></div>
               <div class="rocket__menu__item"><a class="rocket__menu__title" href="/style.html">Style</a>
                 <div class="rocket__menu__content"></div>
                 <nav class="rocket__submenu">
@@ -90,12 +90,14 @@
                 </div>
                 <div class="__showcase__description">
                   <pre class="rocket__pre"><code>&lt;nav class="rocket__nav rocket__name--primary"&gt;
-    &lt;a class="rocket__nav__item"&gt;Link 1&lt;/a&gt;&lt;a class="rocket__nav__item rocket__nav__item--active"&gt;Link 2&lt;/a&gt;&lt;a class="rocket__nav__item"&gt;Link 3&lt;/a&gt;
+    &lt;a class="rocket__nav__item"&gt;Link 1&lt;/a&gt;
+    &lt;a class="rocket__nav__item rocket__nav__item--active"&gt;Link 2&lt;/a&gt;
+    &lt;a class="rocket__nav__item"&gt;Link 3&lt;/a&gt;
 &lt;/nav&gt;</code></pre>
                 </div>
               </div>
             </div>
-            <div class="__section__footer">Note that <em>&lt;a&gt;</em> tags must be adjacent to each other if you are writing raw HTML without space trimming.</div>
+            <div class="__section__footer">Note that <em>&lt;a&gt;</em> tags must be adjacent to each other if you are writing raw HTML without space trimming. Same applies to following examples.</div>
           </div>
           <div class="__section">
             <div class="__section__header">
@@ -128,17 +130,22 @@
            &lt;g&gt;
                 &lt;path d="M14,14l-3-3m1-4a5,5,0,1,0-5,5A5,5,0,0,0,12,7Z" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2"/&gt;
           &lt;/g&gt;
-       &lt;/svg&gt;Link 1&lt;/a&gt;&lt;a class="rocket__nav__item rocket__nav__item--active"&gt;
+       &lt;/svg&gt;Link 1
+   &lt;/a&gt;
+   &lt;a class="rocket__nav__item rocket__nav__item--active"&gt;
        &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"&gt;
            &lt;g&gt;
                &lt;path d="M14,14l-3-3m1-4a5,5,0,1,0-5,5A5,5,0,0,0,12,7Z" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2"/&gt;
           &lt;/g&gt;
-      &lt;/svg&gt;Link 2&lt;/a&gt;&lt;a class="rocket__nav__item"&gt;
+      &lt;/svg&gt;Link 2
+   &lt;/a&gt;
+   &lt;a class="rocket__nav__item"&gt;
       &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"&gt;
            &lt;g&gt;
                &lt;path d="M14,14l-3-3m1-4a5,5,0,1,0-5,5A5,5,0,0,0,12,7Z" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2"/&gt;
           &lt;/g&gt;
-       &lt;/svg&gt;Link 3&lt;/a&gt;
+       &lt;/svg&gt;Link 3
+   &lt;/a&gt;
 &lt;/nav&gt;</code></pre>
                 </div>
               </div>
@@ -175,17 +182,22 @@
            &lt;g&gt;
                 &lt;path d="M14,14l-3-3m1-4a5,5,0,1,0-5,5A5,5,0,0,0,12,7Z" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2"/&gt;
           &lt;/g&gt;
-       &lt;/svg&gt;Link 1&lt;span class="rocket__nav__pill"&gt;100&lt;/span&gt;&lt;/a&gt;&lt;a class="rocket__nav__item rocket__nav__item--active"&gt;
+       &lt;/svg&gt;Link 1&lt;span class="rocket__nav__pill"&gt;100&lt;/span&gt;
+   &lt;/a&gt;
+   &lt;a class="rocket__nav__item rocket__nav__item--active"&gt;
        &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"&gt;
            &lt;g&gt;
                &lt;path d="M14,14l-3-3m1-4a5,5,0,1,0-5,5A5,5,0,0,0,12,7Z" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2"/&gt;
           &lt;/g&gt;
-      &lt;/svg&gt;Link 2&lt;span class="rocket__nav__pill"&gt;100&lt;/span&gt;&lt;/a&gt;&lt;a class="rocket__nav__item"&gt;
+      &lt;/svg&gt;Link 2&lt;span class="rocket__nav__pill"&gt;100&lt;/span&gt;
+   &lt;/a&gt;
+   &lt;a class="rocket__nav__item"&gt;
       &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"&gt;
            &lt;g&gt;
                &lt;path d="M14,14l-3-3m1-4a5,5,0,1,0-5,5A5,5,0,0,0,12,7Z" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2"/&gt;
           &lt;/g&gt;
-       &lt;/svg&gt;Link 3&lt;span class="rocket__nav__pill"&gt;100&lt;/span&gt;&lt;/a&gt;
+       &lt;/svg&gt;Link 3&lt;span class="rocket__nav__pill"&gt;100&lt;/span&gt;
+   &lt;/a&gt;
 &lt;/nav&gt;</code></pre>
                 </div>
               </div>
@@ -206,7 +218,9 @@
                 </div>
                 <div class="__showcase__description">
                   <pre class="rocket__pre"><code>&lt;nav class="rocket__nav rocket__nav--secondary"&gt;
-    &lt;a class="rocket__nav__item"&gt;Link 1&lt;/a&gt;&lt;a class="rocket__nav__item rocket__nav__item--active"&gt;Link 2&lt;/a&gt;&lt;a class="rocket__nav__item"&gt;Link 3&lt;/a&gt;
+    &lt;a class="rocket__nav__item"&gt;Link 1&lt;/a&gt;
+    &lt;a class="rocket__nav__item rocket__nav__item--active"&gt;Link 2&lt;/a&gt;
+    &lt;a class="rocket__nav__item"&gt;Link 3&lt;/a&gt;
 &lt;/nav&gt;</code></pre>
                 </div>
               </div>
@@ -286,22 +300,27 @@
                 </div>
                 <div class="__showcase__description">
                   <pre class="rocket__pre"><code>&lt;nav class="rocket__nav rocket__nav--secondary rocket__nav--icon"&gt;
-   &lt;a class="rocket__nav__item"&gt;
+    &lt;a class="rocket__nav__item"&gt;
        &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"&gt;
            &lt;g&gt;
                 &lt;path d="M14,14l-3-3m1-4a5,5,0,1,0-5,5A5,5,0,0,0,12,7Z" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2"/&gt;
           &lt;/g&gt;
-       &lt;/svg&gt;Link 1&lt;span class="rocket__nav__pill"&gt;100&lt;/span&gt;&lt;/a&gt;&lt;a class="rocket__nav__item rocket__nav__item--active"&gt;
+       &lt;/svg&gt;Link 1&lt;span class="rocket__nav__pill"&gt;100&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="rocket__nav__item rocket__nav__item--active"&gt;
        &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"&gt;
            &lt;g&gt;
                &lt;path d="M14,14l-3-3m1-4a5,5,0,1,0-5,5A5,5,0,0,0,12,7Z" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2"/&gt;
           &lt;/g&gt;
-      &lt;/svg&gt;Link 2&lt;span class="rocket__nav__pill"&gt;100&lt;/span&gt;&lt;/a&gt;&lt;a class="rocket__nav__item"&gt;
-      &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"&gt;
+      &lt;/svg&gt;Link 2&lt;span class="rocket__nav__pill"&gt;100&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="rocket__nav__item"&gt;
+       &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"&gt;
            &lt;g&gt;
                &lt;path d="M14,14l-3-3m1-4a5,5,0,1,0-5,5A5,5,0,0,0,12,7Z" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2"/&gt;
           &lt;/g&gt;
-       &lt;/svg&gt;Link 3&lt;span class="rocket__nav__pill"&gt;100&lt;/span&gt;&lt;/a&gt;
+       &lt;/svg&gt;Link 3&lt;span class="rocket__nav__pill"&gt;100&lt;/span&gt;
+    &lt;/a&gt;
 &lt;/nav&gt;</code></pre>
                 </div>
               </div>
@@ -322,7 +341,9 @@
                 </div>
                 <div class="__showcase__description">
                   <pre class="rocket__pre"><code>&lt;nav class="rocket__nav rocket__nav--pill"&gt;
-    &lt;a class="rocket__nav__item"&gt;Link 1&lt;/a&gt;&lt;a class="rocket__nav__item rocket__nav__item--active"&gt;Link 2&lt;/a&gt;&lt;a class="rocket__nav__item"&gt;Link 3&lt;/a&gt;
+    &lt;a class="rocket__nav__item"&gt;Link 1&lt;/a&gt;
+    &lt;a class="rocket__nav__item rocket__nav__item--active"&gt;Link 2&lt;/a&gt;
+    &lt;a class="rocket__nav__item"&gt;Link 3&lt;/a&gt;
 &lt;/nav&gt;</code></pre>
                 </div>
               </div>
@@ -343,7 +364,9 @@
                 </div>
                 <div class="__showcase__description">
                   <pre class="rocket__pre"><code>&lt;nav class="rocket__nav rocket__nav--pill"&gt;
-    &lt;a class="rocket__nav__item"&gt;Link 1&lt;/a&gt;&lt;a class="rocket__nav__item rocket__nav__item--active"&gt;Link 2&lt;/a&gt;&lt;a class="rocket__nav__item"&gt;Link 3&lt;/a&gt;
+    &lt;a class="rocket__nav__item"&gt;Link 1&lt;/a&gt;
+    &lt;a class="rocket__nav__item rocket__nav__item--active"&gt;Link 2&lt;/a&gt;
+    &lt;a class="rocket__nav__item"&gt;Link 3&lt;/a&gt;
 &lt;/nav&gt;</code></pre>
                 </div>
               </div>
@@ -352,5 +375,6 @@
         </div>
       </main>
     </div>
+    <script src="/assets/scripts.js"></script>
   </body>
 </html>
