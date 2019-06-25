@@ -20,7 +20,7 @@
 
         if ( globals.selectBrandElement ) {
 
-            globals.selectBrandElement.value = brand;
+            globals.selectBrandElement.value = brand || 'coles';
         }
 
     } )();
@@ -75,4 +75,9 @@ function __( string ) {
 
         return document.querySelectorAll( string );
     }
+}
+
+function createIconTiles( icons ) {
+
+    console.log( icons );
 }
