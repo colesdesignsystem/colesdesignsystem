@@ -316,6 +316,9 @@
 .__section--horizontal .__showcase__glass .rocket__button:before {
   content: "";
 }
+.__section--secondary .__section__header {
+  margin-bottom: 8px;
+}
 .__section--vertical .__showcase__glass {
   flex-direction: column;
 }
