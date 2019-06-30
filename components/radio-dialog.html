@@ -68,8 +68,8 @@
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Table" href="/components/table.html">Table</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Tag" href="/components/tag.html">Tag</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Text Field" href="/components/text-field.html">Text Field</a></div>
-                  <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Tile" href="/components/tile.html">Tile</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Thumbnail" href="/components/thumbnail.html">Thumbnail</a></div>
+                  <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Tile" href="/components/tile.html">Tile</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Toolbar" href="/components/toolbar.html">Toolbar</a></div>
                 </nav>
               </div>
@@ -79,7 +79,7 @@
         <div class="__main__content __main__content--component-radio-dialog">
           <div class="__section">
             <div class="__section__header">
-              <div class="__section__title">Pill</div>
+              <div class="__section__title">Radio Dialog</div>
             </div>
             <div class="__section__content">List of two or more items containing a heading and description, where a user may select one mutually exclusive option.</div>
           </div>
@@ -88,33 +88,39 @@
               <div class="__showcase">
                 <div class="__showcase__frame">
                   <div class="__showcase__glass">
-                    <div class="rocket__radio-dialog"> 
-                      <div class="rocket__radio-dialog__title">Early Start</div>
-                      <div class="rocket__radio-dialog__content">2 hours prior to roster start time</div>
+                    <div class="rocket__radio-dialog">
+                      <input class="rocket__radio-dialog__radio" id="early-start" type="radio" name="start-time">
+                      <label class="rocket__radio-dialog__label" for="early-start"><span class="rocket__radio-dialog__title">Early Start</span><span class="rocket__radio-dialog__content">2 hours prior to roster start time</span></label>
                     </div>
-                    <div class="rocket__radio-dialog rocket__radio-dialog--checked">
-                      <div class="rocket__radio-dialog__title">Late Start</div>
-                      <div class="rocket__radio-dialog__content">2 hours prior to roster start time</div>
+                    <div class="rocket__radio-dialog">
+                      <input class="rocket__radio-dialog__radio" id="late-start" type="radio" name="start-time" checked>
+                      <label class="rocket__radio-dialog__label" for="late-start"><span class="rocket__radio-dialog__title">Late Start</span><span class="rocket__radio-dialog__content">2 hours prior to roster start time</span></label>
                     </div>
                   </div>
                   <div class="__showcase__labels"><span class="__showcase__label __showcase__label--active">HTML</span><span class="__showcase__label">React</span></div>
                 </div>
                 <div class="__showcase__description">
-                  <pre class="rocket__pre"><code class="language-html">&lt;div class="rocket__radio-dialog"&gt; 
-    &lt;div class="rocket__radio-dialog__title"&gt;Early Start&lt;/div&gt;
-   &lt;div class="rocket__radio-dialog__content"&gt;2 hours prior to roster start time&lt;/div&gt;
+                  <pre class="rocket__pre"><code class="language-html">&lt;div class="rocket__radio-dialog"&gt;
+    &lt;input class="rocket__radio-dialog__radio" id="early-start" type="radio" name="start-time"&gt;
+    &lt;label class="rocket__radio-dialog__label" for="early-start"&gt;
+        &lt;span class="rocket__radio-dialog__title"&gt;Early Start&lt;/span&gt;
+        &lt;span class="rocket__radio-dialog__content"&gt;2 hours prior to roster start time&lt;/span&gt;
+    &lt;/label&gt;
 &lt;/div&gt;
-&lt;div class="rocket__radio-dialog rocket__radio-dialog--checked"&gt; 
-   &lt;div class="rocket__radio-dialog__title"&gt;Late Start&lt;/div&gt;
-   &lt;div class="rocket__radio-dialog__content"&gt;2 hours prior to roster start time&lt;/div&gt;
+&lt;div class="rocket__radio-dialog"&gt;
+    &lt;input class="rocket__radio-dialog__radio" id="late-start" type="radio" name="start-time" checked&gt;
+    &lt;label class="rocket__radio-dialog__label" for="late-start"&gt;
+        &lt;span class="rocket__radio-dialog__title"&gt;Late Start&lt;/span&gt;
+        &lt;span class="rocket__radio-dialog__content"&gt;2 hours prior to roster start time&lt;/span&gt;
+    &lt;/label&gt;
 &lt;/div&gt;</code></pre>
                 </div>
               </div>
             </div>
           </div>
-          <div class="__section">
+          <div class="__section __section--secondary">
             <div class="__section__header">
-              <div class="__section__title">Usage</div>
+              <div class="rocket__h2">Usage</div>
             </div>
             <div class="__section__content">
               <ul class="rocket__ul">
@@ -124,9 +130,9 @@
               </ul>
             </div>
           </div>
-          <div class="__section">
+          <div class="__section __section--secondary">
             <div class="__section__header">
-              <div class="__section__title">Content</div>
+              <div class="rocket__h2">Content</div>
             </div>
             <div class="__section__content">
               <ul class="rocket__ul">
@@ -134,6 +140,14 @@
                 <li class="rocket__li">Keep descriptions brief.</li>
                 <li class="rocket__li">Avoid punctuation.</li>
               </ul>
+            </div>
+          </div>
+          <div class="__section __section--secondary">
+            <div class="__section__header">
+              <div class="rocket__h2">Accessibility usage notes</div>
+            </div>
+            <div class="__section__content">
+              <div class="rocket__font rocket__font--medium">Associate each radio button with it's label.  Set the value of the <em>for</em> attribute on the label to the <em>id</em> of the radio.</div>
             </div>
           </div>
         </div>

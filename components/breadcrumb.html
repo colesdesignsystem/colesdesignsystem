@@ -68,8 +68,8 @@
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Table" href="/components/table.html">Table</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Tag" href="/components/tag.html">Tag</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Text Field" href="/components/text-field.html">Text Field</a></div>
-                  <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Tile" href="/components/tile.html">Tile</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Thumbnail" href="/components/thumbnail.html">Thumbnail</a></div>
+                  <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Tile" href="/components/tile.html">Tile</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Toolbar" href="/components/toolbar.html">Toolbar</a></div>
                 </nav>
               </div>
@@ -88,22 +88,20 @@
               <div class="__showcase">
                 <div class="__showcase__frame">
                   <div class="__showcase__glass">
-                    <div class="rocket__breadcrumb" aria-label="breadcrumb"><span class="rocket__breadcrumb__item">
-                        <div class="rocket__link" href="#">home</div></span><span class="rocket__breadcrumb__item">
-                        <div class="rocket__link" href="#">about us</div></span><span class="rocket__breadcrumb__item rocket__breadcrumb__item--current" aria-current="page">our values</span></div>
+                    <nav class="rocket__breadcrumb" aria-label="Breadcrumb"><span class="rocket__breadcrumb__item"><a class="rocket__link" href="#home">home</a></span><span class="rocket__breadcrumb__item"><a class="rocket__link" href="#about-us">about us</a></span><span class="rocket__breadcrumb__item rocket__breadcrumb__item--current" aria-current="page">our values</span></nav>
                   </div>
                   <div class="__showcase__labels"><span class="__showcase__label __showcase__label--active">HTML</span><span class="__showcase__label">React</span></div>
                 </div>
                 <div class="__showcase__description">
-                  <pre class="rocket__pre"><code class="language-html">&lt;div class="rocket__breadcrumb" aria-label="breadcrumb"&gt;
+                  <pre class="rocket__pre"><code class="language-html">&lt;nav class="rocket__breadcrumb" aria-label="Breadcrumb"&gt;
     &lt;span class="rocket__breadcrumb__item"&gt;
-        &lt;span class="rocket__link" href="#"&gt;home&lt;/span&gt;
+         &lt;a class="rocket__link" href="#home"&gt;home&lt;/a&gt;
     &lt;/span&gt;
     &lt;span class="rocket__breadcrumb__item"&gt;
-         &lt;span class="rocket__link" href="#"&gt;about us&lt;/span&gt;
+         &lt;a class="rocket__link" href="#about-us"&gt;about us&lt;/a&gt;
     &lt;/span&gt;
     &lt;span class="rocket__breadcrumb__item rocket__breadcrumb__item--current" aria-current="page"&gt;our values&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+&lt;/nav&gt;</code></pre>
                 </div>
               </div>
             </div>
@@ -112,9 +110,7 @@
             <div class="__section__header">
               <div class="rocket__h2">Accessibility usage notes</div>
             </div>
-            <div class="__section__content">
-              <div class="rocket__font rocket__font--medium">Programmatically indicate the current page by adding the aria-current attribute with the value 'page'.</div>
-            </div>
+            <div class="__section__content rocket__font rocket__font--medium">Programmatically indicate the current page by adding the <em>aria-current</em> attribute with the value <em>page</em>.</div>
           </div>
         </div>
       </main>

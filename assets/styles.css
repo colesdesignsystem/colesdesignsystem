@@ -292,6 +292,10 @@
   margin: 10px;
 }
 
+.__main__content--component-tag .rocket__tag {
+  margin-right: 10px;
+}
+
 .__section {
   margin-bottom: 32px;
 }

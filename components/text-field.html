@@ -68,8 +68,8 @@
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Table" href="/components/table.html">Table</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Tag" href="/components/tag.html">Tag</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title rocket__submenu__title--active" title="Text Field" href="/components/text-field.html">Text Field</a></div>
-                  <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Tile" href="/components/tile.html">Tile</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Thumbnail" href="/components/thumbnail.html">Thumbnail</a></div>
+                  <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Tile" href="/components/tile.html">Tile</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Toolbar" href="/components/toolbar.html">Toolbar</a></div>
                 </nav>
               </div>
@@ -83,45 +83,84 @@
             </div>
             <div class="__section__content">Single line input field allowing users in input and edit data.</div>
           </div>
-          <div class="__section">
+          <div class="__section __section--secondary">
             <div class="__section__header">
-              <div class="__section__title">Default</div>
+              <div class="rocket__h2">Error</div>
             </div>
             <div class="__section__content">
               <div class="__showcase">
                 <div class="__showcase__frame">
                   <div class="__showcase__glass">
-                    <input class="rocket__input rocket__input--text" type="text" placeholder="Enter...">
+                    <div class="rocket__field">
+                      <label class="rocket__field__title" for="first-name">First Name</label>
+                      <div class="rocket__field__content">
+                        <input class="rocket__input rocket__input--text" id="first-name" type="text" name="fn" placeholder="Input..." autocomplete="given-name">
+                      </div>
+                      <div class="rocket__field__error">Error message</div>
+                    </div>
                   </div>
                   <div class="__showcase__labels"><span class="__showcase__label __showcase__label--active">HTML</span><span class="__showcase__label">React</span></div>
                 </div>
                 <div class="__showcase__description">
-                  <pre class="rocket__pre"><code class="language-html">&lt;input class="rocket__input rocket__input--text" type="text" placeholder="Enter..."&gt;</code></pre>
+                  <pre class="rocket__pre"><code class="language-html">&lt;div class="rocket__field"&gt;
+    &lt;label class="rocket__field__title" for="first-name"&gt;First Name&lt;/label&gt;
+    &lt;div class="rocket__field__content"&gt;
+        &lt;input class="rocket__input rocket__input--text" 
+               id="first-name" 
+               type="text" 
+               name="fn" 
+               placeholder="Input..."
+               autocomplete="given-name"
+               aria-describedby="first-name-error"
+        &gt;
+    &lt;/div&gt;
+    &lt;div id="first-name-error" class="rocket__field__error"&gt;Error message&lt;/div&gt;
+&lt;/div&gt;</code></pre>
                 </div>
               </div>
             </div>
+            <div class="__section__footer">Note that the error message is managed by <em>rocket__field--error</em> class. See below. It is not shown if there are no errors.</div>
           </div>
-          <div class="__section">
+          <div class="__section __section--secondary">
             <div class="__section__header">
-              <div class="__section__title">Error</div>
+              <div class="rocket__h2">Error</div>
             </div>
             <div class="__section__content">
               <div class="__showcase">
                 <div class="__showcase__frame">
                   <div class="__showcase__glass">
-                    <input class="rocket__input rocket__input--text rocket__input--error" type="text" value="Error" placeholder="Enter...">
+                    <div class="rocket__field rocket__field--error">
+                      <label class="rocket__field__title" for="last-name">Last Name</label>
+                      <div class="rocket__field__content">
+                        <input class="rocket__input rocket__input--text" id="last-name" type="text" name="ln" placeholder="Input..." autocomplete="family-name">
+                      </div>
+                      <div class="rocket__field__error" id="last-name-error">Invalid last name</div>
+                    </div>
                   </div>
                   <div class="__showcase__labels"><span class="__showcase__label __showcase__label--active">HTML</span><span class="__showcase__label">React</span></div>
                 </div>
                 <div class="__showcase__description">
-                  <pre class="rocket__pre"><code class="language-html">&lt;input class="rocket__input rocket__input--text rocket__input--error" type="text" value="Error" placeholder="Enter..."&gt;</code></pre>
+                  <pre class="rocket__pre"><code class="language-html">&lt;div class="rocket__field rocket__field--error"&gt;
+    &lt;label class="rocket__field__title" for="last-name"&gt;Last Name&lt;/label&gt;
+    &lt;div class="rocket__field__content"&gt;
+        &lt;input class="rocket__input rocket__input--text" 
+               id="last-name" 
+               type="text" 
+               name="fn" 
+               placeholder="Input..." 
+               autocomplete="family-name"
+               aria-describedby="last-name-error"
+        &gt;
+    &lt;/div&gt;
+    &lt;div id="last-name-error" class="rocket__field__error"&gt;Invalid last name&lt;/div&gt;
+&lt;/div&gt;</code></pre>
                 </div>
               </div>
             </div>
           </div>
-          <div class="__section">
+          <div class="__section __section--secondary">
             <div class="__section__header">
-              <div class="__section__title">Usage</div>
+              <div class="rocket__h2">Usage</div>
             </div>
             <div class="__section__content">
               <ul class="rocket__ul">
@@ -129,6 +168,20 @@
                 <li class="rocket__li">Placeholder text is not recommended.</li>
                 <li class="rocket__li">Add help text under the label when additional context is necessary.</li>
                 <li class="rocket__li">Use clear and concise validation messages.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="__section __section--secondary">
+            <div class="__section__header">
+              <div class="rocket__h2">Accessibility usage notes</div>
+            </div>
+            <div class="__section__content">
+              <ul class="rocket__ul">
+                <li class="rocket__li">Associate the textbox with it's label. Set the value of the <em>for</em> attribute on the label to the <em>id</em> of the textbox.</li>
+                <li class="rocket__li">Add autocomplete tokens to common input types.  Broadly, tokens cover a person's name, address, passwords, credit card details, birthdate, phone number, email address.  For the full list refer to <a class="rocket__link" href="https://www.w3.org/TR/WCAG21/#input-purposes">this</a>.</li>
+                <li class="rocket__li">Associate the error message with it's respective input box.  Set the value of the <em>aria-describedby</em> attribute on the input box to the <em>id</em> of the error message.</li>
+                <li class="rocket__li">Programmatically indicate the input field has an error by adding the <em>aria-invalid</em> attribute with a value of <em>true</em>.</li>
+                <li class="rocket__li">If errors are triggered on page submit, then move focus to the first field in error.</li>
               </ul>
             </div>
           </div>

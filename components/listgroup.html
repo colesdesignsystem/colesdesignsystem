@@ -68,8 +68,8 @@
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Table" href="/components/table.html">Table</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Tag" href="/components/tag.html">Tag</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Text Field" href="/components/text-field.html">Text Field</a></div>
-                  <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Tile" href="/components/tile.html">Tile</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Thumbnail" href="/components/thumbnail.html">Thumbnail</a></div>
+                  <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Tile" href="/components/tile.html">Tile</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Toolbar" href="/components/toolbar.html">Toolbar</a></div>
                 </nav>
               </div>
@@ -88,25 +88,29 @@
               <div class="__showcase">
                 <div class="__showcase__frame">
                   <div class="__showcase__glass">
-                    <div class="rocket__listgroup">
-                      <div class="rocket__listgroup__title">LIST GROUP</div>
-                      <div class="rocket__listgroup__item">List item</div>
-                      <div class="rocket__listgroup__item">List item</div>
-                      <div class="rocket__listgroup__item">List item</div>
-                      <div class="rocket__listgroup__item">List item</div>
-                      <div class="rocket__listgroup__item">List item</div>
+                    <div class="rocket__listgroup" aria-describedby="listgroup-1-title">
+                      <div class="rocket__listgroup__title" id="listgroup-1-title">LIST GROUP</div>
+                      <div class="rocket__listgroup__group" role="list">
+                        <div class="rocket__listgroup__item" role="listitem">List item</div>
+                        <div class="rocket__listgroup__item" role="listitem">List item</div>
+                        <div class="rocket__listgroup__item" role="listitem">List item</div>
+                        <div class="rocket__listgroup__item" role="listitem">List item</div>
+                        <div class="rocket__listgroup__item" role="listitem">List item</div>
+                      </div>
                     </div>
                   </div>
                   <div class="__showcase__labels"><span class="__showcase__label __showcase__label--active">HTML</span><span class="__showcase__label">React</span></div>
                 </div>
                 <div class="__showcase__description">
-                  <pre class="rocket__pre"><code class="language-html">&lt;div class="rocket__listgroup"&gt;
-   &lt;div class="rocket__listgroup__title"&gt;LIST GROUP&lt;/div&gt;
-   &lt;div class="rocket__listgroup__item"&gt;List item&lt;/div&gt;
-   &lt;div class="rocket__listgroup__item"&gt;List item&lt;/div&gt;
-   &lt;div class="rocket__listgroup__item"&gt;List item&lt;/div&gt;
-   &lt;div class="rocket__listgroup__item"&gt;List item&lt;/div&gt;
-   &lt;div class="rocket__listgroup__item"&gt;List item&lt;/div&gt;
+                  <pre class="rocket__pre"><code class="language-html">&lt;div class="rocket__listgroup" aria-describedby="listgroup-1-title"&gt;
+   &lt;div class="rocket__listgroup__title" id="listgroup-1-title"&gt;LIST GROUP&lt;/div&gt;
+   &lt;div class="rocket__listgroup__group" role="list"&gt;
+       &lt;div class="rocket__listgroup__item" role="listitem"&gt;List item&lt;/div&gt;
+       &lt;div class="rocket__listgroup__item" role="listitem"&gt;List item&lt;/div&gt;
+       &lt;div class="rocket__listgroup__item" role="listitem"&gt;List item&lt;/div&gt;
+       &lt;div class="rocket__listgroup__item" role="listitem"&gt;List item&lt;/div&gt;
+       &lt;div class="rocket__listgroup__item" role="listitem"&gt;List item&lt;/div&gt;
+   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
               </div>
