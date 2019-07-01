@@ -1300,6 +1300,13 @@
   border: 1px solid #f8f8f8;
   border-collapse: collapse;
 }
+.rocket__caption {
+  font-family: "Source Sans Pro", arial, sans-serif;
+  text-align: left;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
 .rocket__th {
   font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
   color: #6e6e6e;
@@ -1767,11 +1774,11 @@
   position: absolute;
   width: 0;
 }
-.rocket__radio-dialog__radio:hover + .rocket__radio-dialog__label, .rocket__radio-dialog__radio:focus + .rocket__radio-dialog__label, .rocket__radio-dialog__radio:hover:checked + .rocket__radio-dialog__label, .rocket__radio-dialog__radio:focus:checked + .rocket__radio-dialog__label {
+.rocket__radio-dialog__radio:hover + .rocket__radio-dialog__label, .rocket__radio-dialog__radio:focus + .rocket__radio-dialog__label {
   box-shadow: 0 0 0 5px #20211f;
   border: 1px solid #20211f;
 }
-.rocket__radio-dialog__radio:hover + .rocket__radio-dialog__label:before, .rocket__radio-dialog__radio:focus + .rocket__radio-dialog__label:before, .rocket__radio-dialog__radio:hover:checked + .rocket__radio-dialog__label:before, .rocket__radio-dialog__radio:focus:checked + .rocket__radio-dialog__label:before {
+.rocket__radio-dialog__radio:hover + .rocket__radio-dialog__label:before, .rocket__radio-dialog__radio:focus + .rocket__radio-dialog__label:before {
   content: "";
   position: absolute;
   border: 2px solid white;
@@ -1780,21 +1787,31 @@
   right: -2px;
   bottom: -2px;
 }
-.rocket__radio-dialog__radio:hover + .rocket__radio-dialog__label .rocket__radio-dialog__title, .rocket__radio-dialog__radio:focus + .rocket__radio-dialog__label .rocket__radio-dialog__title, .rocket__radio-dialog__radio:hover:checked + .rocket__radio-dialog__label .rocket__radio-dialog__title, .rocket__radio-dialog__radio:focus:checked + .rocket__radio-dialog__label .rocket__radio-dialog__title {
+.rocket__radio-dialog__radio:hover + .rocket__radio-dialog__label .rocket__radio-dialog__title, .rocket__radio-dialog__radio:focus + .rocket__radio-dialog__label .rocket__radio-dialog__title {
   color: #20211f;
 }
-.rocket__radio-dialog__radio:hover + .rocket__radio-dialog__label .rocket__radio-dialog__content, .rocket__radio-dialog__radio:focus + .rocket__radio-dialog__label .rocket__radio-dialog__content, .rocket__radio-dialog__radio:hover:checked + .rocket__radio-dialog__label .rocket__radio-dialog__content, .rocket__radio-dialog__radio:focus:checked + .rocket__radio-dialog__label .rocket__radio-dialog__content {
+.rocket__radio-dialog__radio:hover + .rocket__radio-dialog__label .rocket__radio-dialog__content, .rocket__radio-dialog__radio:focus + .rocket__radio-dialog__label .rocket__radio-dialog__content {
   color: #20211f;
 }
-.rocket__radio-dialog__radio:hover + .rocket__radio-dialog__label:after, .rocket__radio-dialog__radio:focus + .rocket__radio-dialog__label:after, .rocket__radio-dialog__radio:hover:checked + .rocket__radio-dialog__label:after, .rocket__radio-dialog__radio:focus:checked + .rocket__radio-dialog__label:after {
+.rocket__radio-dialog__radio:hover + .rocket__radio-dialog__label:after, .rocket__radio-dialog__radio:focus + .rocket__radio-dialog__label:after {
   background-image: none;
   background-color: transparent;
 }
 .rocket__radio-dialog__radio:checked + .rocket__radio-dialog__label {
-  border: 1px solid white;
-  box-shadow: 0 0 0 5px #008a22;
+  border: 3px solid #008a22;
+  padding: 13px 14px 20px 14px;
 }
-.rocket__radio-dialog__radio:checked + .rocket__radio-dialog__label:before {
+.rocket__radio-dialog__radio:checked + .rocket__radio-dialog__label:hover, .rocket__radio-dialog__radio:checked + .rocket__radio-dialog__label:focus {
+  box-shadow: 0 0 0 5px #20211f;
+  border: 3px solid #008a22;
+}
+.rocket__radio-dialog__radio:checked + .rocket__radio-dialog__label:hover .rocket__radio-dialog__title, .rocket__radio-dialog__radio:checked + .rocket__radio-dialog__label:focus .rocket__radio-dialog__title {
+  color: #008a22;
+}
+.rocket__radio-dialog__radio:checked + .rocket__radio-dialog__label:hover .rocket__radio-dialog__content, .rocket__radio-dialog__radio:checked + .rocket__radio-dialog__label:focus .rocket__radio-dialog__content {
+  color: #008a22;
+}
+.rocket__radio-dialog__radio:checked + .rocket__radio-dialog__label:hover:before, .rocket__radio-dialog__radio:checked + .rocket__radio-dialog__label:focus:before {
   content: "";
   position: absolute;
   border: 2px solid white;
@@ -1806,13 +1823,15 @@
 .rocket__radio-dialog__radio:checked + .rocket__radio-dialog__label:after {
   position: absolute;
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   background-color: #008a22;
-  top: -10px;
-  right: -10px;
+  top: -12px;
+  right: -12px;
   border-radius: 100px;
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-3 -3 16 16' aria-hidden='true' focusable='false'%3E%3Cg %3E%3Cpolyline points='11.99 5 6.49 11 4.01 8.54' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
+  border: 2px solid white;
+  z-index: 1;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='-2 -2 20 20' aria-hidden='true' focusable='false'%3E%3Cg %3E%3Cpolyline points='11.99 5 6.49 11 4.01 8.54' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
 }
 .rocket__radio-dialog__radio:checked + .rocket__radio-dialog__label .rocket__radio-dialog__title {
