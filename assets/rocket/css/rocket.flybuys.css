@@ -1341,12 +1341,133 @@
   cursor: pointer;
   text-decoration: none;
   padding: 12px 24px 15px 24px;
+  position: relative;
 }
 .rocket__nav__item:hover, .rocket__nav__item:focus {
   box-shadow: 0 0 0 3px #20211f;
+  z-index: 1;
 }
 .rocket__nav__item:hover:active, .rocket__nav__item:focus:active {
   box-shadow: none;
+}
+.rocket__nav.rocket__nav--icon .rocket__nav__item {
+  padding-left: 48px;
+}
+.rocket__nav.rocket__nav--icon .rocket__nav__item svg {
+  position: absolute;
+  top: 16px;
+  left: 22px;
+}
+.rocket__nav--primary .rocket__nav__item {
+  padding: 12px 24px 15px 24px;
+  color: white;
+  background-color: #047CC2;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.rocket__nav--primary .rocket__nav__item:hover, .rocket__nav--primary .rocket__nav__item:focus {
+  border: 2px solid white;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #047CC2;
+}
+.rocket__nav--primary .rocket__nav__item:hover:active, .rocket__nav--primary .rocket__nav__item:focus:active {
+  background-color: #104B91;
+  border: none;
+  padding: 12px 24px 15px 24px;
+}
+.rocket__nav--primary .rocket__nav__item--active {
+  border: 0;
+  padding-bottom: 11px;
+  background-color: #104B91;
+}
+.rocket__nav--primary .rocket__nav__item--active:hover, .rocket__nav--primary .rocket__nav__item--active:focus {
+  padding-bottom: 15px;
+}
+.rocket__nav--primary.rocket__nav--icon .rocket__nav__item:hover, .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:focus {
+  padding-left: 46px;
+  padding-right: 22px;
+}
+.rocket__nav--primary.rocket__nav--icon .rocket__nav__item:hover svg, .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:focus svg {
+  left: 20px;
+}
+.rocket__nav--primary.rocket__nav--icon .rocket__nav__item:hover:active, .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:focus:active {
+  padding-left: 48px;
+  padding-right: 24px;
+}
+.rocket__nav--primary.rocket__nav--icon .rocket__nav__item:hover:active svg, .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:focus:active svg {
+  left: 22px;
+}
+.rocket__nav--secondary .rocket__nav__pill {
+  background-color: #6e6e6e;
+  color: white;
+}
+.rocket__nav--secondary .rocket__nav__item {
+  border-color: white;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 14px;
+  background-color: white;
+  color: #6e6e6e;
+}
+.rocket__nav--secondary .rocket__nav__item path {
+  stroke: #6e6e6e;
+}
+.rocket__nav--secondary .rocket__nav__item:hover, .rocket__nav--secondary .rocket__nav__item:focus {
+  padding-bottom: 15px;
+  border-bottom: 0;
+  background-color: white;
+  color: #20211f;
+}
+.rocket__nav--secondary .rocket__nav__item:hover path, .rocket__nav--secondary .rocket__nav__item:focus path {
+  stroke: #20211f;
+}
+.rocket__nav--secondary .rocket__nav__item:hover .rocket__nav__pill, .rocket__nav--secondary .rocket__nav__item:focus .rocket__nav__pill {
+  background-color: #20211f;
+}
+.rocket__nav--secondary .rocket__nav__item:hover:active, .rocket__nav--secondary .rocket__nav__item:focus:active {
+  background-color: #e8e8e8;
+  border-color: #e8e8e8;
+}
+.rocket__nav--secondary .rocket__nav__item:hover:active path, .rocket__nav--secondary .rocket__nav__item:focus:active path {
+  stroke: #20211f;
+}
+.rocket__nav--secondary .rocket__nav__item--active {
+  padding-bottom: 10px;
+  border-bottom: 4px solid #047CC2;
+  color: #20211f;
+}
+.rocket__nav--secondary .rocket__nav__item--active path {
+  stroke: #20211f;
+}
+.rocket__nav--secondary .rocket__nav__item--active .rocket__nav__pill {
+  background-color: #20211f;
+}
+.rocket__nav.rocket__nav--vertical .rocket__nav__item {
+  display: block;
+  padding: 8px 16px 10px 16px;
+  background-color: white;
+  color: #6e6e6e;
+}
+.rocket__nav.rocket__nav--vertical .rocket__nav__item:hover, .rocket__nav.rocket__nav--vertical .rocket__nav__item:focus {
+  margin-bottom: 3px;
+  padding-bottom: 7px;
+  color: #20211f;
+}
+.rocket__nav.rocket__nav--vertical .rocket__nav__item:hover:active, .rocket__nav.rocket__nav--vertical .rocket__nav__item:focus:active {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  background-color: #e8e8e8;
+}
+.rocket__nav.rocket__nav--vertical .rocket__nav__item--active {
+  border-left: 4px solid #047CC2;
+  padding-left: 12px;
+  color: #20211f;
+}
+.rocket__nav.rocket__nav--vertical .rocket__nav__item--active:hover, .rocket__nav.rocket__nav--vertical .rocket__nav__item--active:focus {
+  padding-left: 16px;
+  border-left: 0;
 }
 .rocket__nav.rocket__nav--pill .rocket__nav__item {
   border-radius: 100px;
@@ -1373,173 +1494,6 @@
   border: 0;
   color: white;
   text-decoration: none;
-}
-.rocket__nav.rocket__nav--vertical .rocket__nav__item {
-  display: block;
-  padding: 8px 16px 10px 16px;
-  background-color: white;
-  color: #6e6e6e;
-  /* Fix for inline-block or flex */
-}
-.rocket__nav.rocket__nav--vertical .rocket__nav__item:hover, .rocket__nav.rocket__nav--vertical .rocket__nav__item:focus {
-  margin-bottom: 3px;
-  padding-bottom: 7px;
-  color: #20211f;
-}
-.rocket__nav.rocket__nav--vertical .rocket__nav__item:hover:active, .rocket__nav.rocket__nav--vertical .rocket__nav__item:focus:active {
-  margin-bottom: 0;
-  padding-bottom: 10px;
-  background-color: #e8e8e8;
-}
-.rocket__nav.rocket__nav--vertical .rocket__nav__item--active {
-  border-left: 4px solid #047CC2;
-  padding-left: 12px;
-  color: #20211f;
-}
-.rocket__nav.rocket__nav--vertical .rocket__nav__item--active:hover, .rocket__nav.rocket__nav--vertical .rocket__nav__item--active:focus {
-  padding-left: 16px;
-  border-left: 0;
-}
-.rocket__nav.rocket__nav--vertical .rocket__nav__item:last-child:hover, .rocket__nav.rocket__nav--vertical .rocket__nav__item:last-child:focus {
-  padding-bottom: 10px;
-  margin-bottom: 0;
-}
-.rocket__nav--primary .rocket__nav__item {
-  border-top: 2px solid #047CC2;
-  border-bottom: 2px solid #047CC2;
-  border-left: 5px solid #047CC2;
-  border-right: 5px solid #047CC2;
-  padding: 10px 19px 13px 19px;
-  color: white;
-  background-color: #047CC2;
-}
-.rocket__nav--primary .rocket__nav__item:hover, .rocket__nav--primary .rocket__nav__item:focus {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  margin-left: 3px;
-  margin-right: 3px;
-  padding: 10px 19px 13px 19px;
-  background-color: #047CC2;
-}
-.rocket__nav--primary .rocket__nav__item:hover:active, .rocket__nav--primary .rocket__nav__item:focus:active {
-  background-color: #104B91;
-  border-top: 2px solid #104B91;
-  border-bottom: 2px solid #104B91;
-  border-left: 5px solid #104B91;
-  border-right: 5px solid #104B91;
-  margin-left: 0;
-  margin-right: 0;
-}
-.rocket__nav--primary .rocket__nav__item--active {
-  border: 0;
-  border-bottom: 4px solid white;
-  padding: 12px 24px 11px 24px;
-  background-color: #104B91;
-}
-.rocket__nav--primary.rocket__nav--icon .rocket__nav__item {
-  position: relative;
-  padding: 10px 19px 13px 43px;
-}
-.rocket__nav--primary.rocket__nav--icon .rocket__nav__item:hover, .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:focus {
-  padding: 10px 19px 13px 43px;
-}
-.rocket__nav--primary.rocket__nav--icon .rocket__nav__item svg {
-  position: absolute;
-  top: 14px;
-  left: 19px;
-}
-.rocket__nav--primary.rocket__nav--icon .rocket__nav__item--active {
-  padding: 12px 24px 11px 48px;
-}
-.rocket__nav--primary.rocket__nav--icon .rocket__nav__item--active svg {
-  top: 16px;
-  left: 21px;
-}
-.rocket__nav--primary.rocket__nav--icon .rocket__nav__item--active:hover svg, .rocket__nav--primary.rocket__nav--icon .rocket__nav__item--active:focus svg {
-  top: 14px;
-  left: 16px;
-}
-.rocket__nav--secondary .rocket__nav__pill {
-  background-color: #6e6e6e;
-  color: white;
-}
-.rocket__nav--secondary .rocket__nav__item {
-  border-color: white;
-  border-bottom: 1px solid #e8e8e8;
-  padding: 10px 24px 14px 24px;
-  background-color: white;
-  color: #6e6e6e;
-}
-.rocket__nav--secondary .rocket__nav__item path {
-  stroke: #6e6e6e;
-}
-.rocket__nav--secondary .rocket__nav__item:hover, .rocket__nav--secondary .rocket__nav__item:focus {
-  background-color: white;
-  color: #20211f;
-  padding: 10px 21px 14px 21px;
-  margin-left: 3px;
-  margin-right: 3px;
-}
-.rocket__nav--secondary .rocket__nav__item:hover path, .rocket__nav--secondary .rocket__nav__item:focus path {
-  stroke: #20211f;
-}
-.rocket__nav--secondary .rocket__nav__item:hover .rocket__nav__pill, .rocket__nav--secondary .rocket__nav__item:focus .rocket__nav__pill {
-  background-color: #20211f;
-}
-.rocket__nav--secondary .rocket__nav__item:hover:active, .rocket__nav--secondary .rocket__nav__item:focus:active {
-  background-color: #e8e8e8;
-  border-color: #e8e8e8;
-}
-.rocket__nav--secondary .rocket__nav__item:hover:active path, .rocket__nav--secondary .rocket__nav__item:focus:active path {
-  stroke: #20211f;
-}
-.rocket__nav--secondary .rocket__nav__item--active {
-  border-bottom: 4px solid #047CC2;
-  padding: 10px 24px 11px 24px;
-  color: #20211f;
-}
-.rocket__nav--secondary .rocket__nav__item--active:hover, .rocket__nav--secondary .rocket__nav__item--active:focus {
-  border-bottom: 0;
-  padding-bottom: 15px;
-}
-.rocket__nav--secondary .rocket__nav__item--active path {
-  stroke: #20211f;
-}
-.rocket__nav--secondary .rocket__nav__item--active .rocket__nav__pill {
-  background-color: #20211f;
-}
-.rocket__nav--secondary.rocket__nav--icon .rocket__nav__item {
-  position: relative;
-  padding: 10px 24px 13px 48px;
-}
-.rocket__nav--secondary.rocket__nav--icon .rocket__nav__item svg {
-  position: absolute;
-  left: 24px;
-  top: 14px;
-}
-.rocket__nav--secondary.rocket__nav--icon .rocket__nav__item:hover, .rocket__nav--secondary.rocket__nav--icon .rocket__nav__item:focus {
-  padding: 10px 21px 13px 45px;
-  margin-left: 3px;
-  margin-right: 3px;
-}
-.rocket__nav--secondary.rocket__nav--icon .rocket__nav__item:hover svg, .rocket__nav--secondary.rocket__nav--icon .rocket__nav__item:focus svg {
-  left: 21px;
-}
-.rocket__nav--secondary.rocket__nav--icon .rocket__nav__item--active {
-  padding-bottom: 10px;
-}
-.rocket__nav--secondary.rocket__nav--icon .rocket__nav__item--active svg {
-  top: 14px;
-  left: 21px;
-}
-.rocket__nav--secondary.rocket__nav--icon .rocket__nav__item--active:hover, .rocket__nav--secondary.rocket__nav--icon .rocket__nav__item--active:focus {
-  padding-bottom: 14px;
-}
-.rocket__nav--secondary.rocket__nav--icon .rocket__nav__item--active:hover svg, .rocket__nav--secondary.rocket__nav--icon .rocket__nav__item--active:focus svg {
-  top: 14px;
-  left: 18px;
 }
 .rocket__nav__pill {
   font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
