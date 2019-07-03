@@ -37,21 +37,28 @@
   width: 100%;
 }
 .__index__background {
-  position: absolute;
+  flex-grow: 1;
+  order: 3;
+  margin-top: -150px;
 }
-.__index__main {
-  display: inline-block;
-  width: 700px;
+.__index__background svg {
+  width: 100%;
+  height: 100%;
 }
-.__index__header {
+.__index__content {
+  flex-basis: 50%;
+  padding-right: 50px;
+  order: 2;
+}
+.__index__content .__content__header {
   margin-bottom: 24px;
   display: flex;
   align-items: center;
 }
-.__index__content {
+.__index__content .__content__main {
   margin-bottom: 35px;
 }
-.__index__icon {
+.__index__content .__content__icon {
   background-color: #E01A22;
   width: 82px;
   height: 82px;
@@ -61,33 +68,63 @@
 }
 .__index__section {
   padding: 0 52px;
-  padding-top: 228px;
-  padding-bottom: 228px;
+  padding-top: 200px;
+  padding-bottom: 80px;
   position: relative;
-}
-.__index__section--odd .__index__background {
-  top: 50px;
-  right: 52px;
+  display: flex;
 }
 .__index__section--even {
   background-color: #2A3B4B;
-  text-align: right;
 }
 .__index__section--even .__index__background {
-  top: 60px;
-  left: 52px;
-}
-.__index__section--even .__index__main {
-  text-align: left;
-}
-.__index__section--even .__index__title {
-  color: white;
-  vertical-align: middle;
+  order: 1;
 }
 .__index__section--even .__index__content {
+  padding-right: 0;
+  padding-left: 50px;
+}
+.__index__section--even .__index__content .__content__title {
   color: white;
 }
+.__index__section--even .__index__content .__content__main {
+  color: white;
+}
+.__index__network {
+  padding: 119px 52px;
+  display: flex;
+  justify-content: space-between;
+}
+.__index__column {
+  flex-basis: 48%;
+}
+.__index__column .__column__header {
+  margin-bottom: 24px;
+}
+.__index__column .__column__row {
+  margin-bottom: 11px;
+}
+.__index__column .__column__title {
+  margin-bottom: 6px;
+}
 
+@media only screen and (max-width: 768px) {
+  .__index__section {
+    display: block;
+    padding-top: 50px;
+  }
+  .__index__section--even .__index__content {
+    padding-left: 0;
+  }
+  .__index__background {
+    margin-top: 0;
+  }
+  .__index__network {
+    display: block;
+  }
+  .__index__column {
+    margin-bottom: 50px;
+  }
+}
 .__main__side-nav {
   width: 224px;
   min-width: 224px;

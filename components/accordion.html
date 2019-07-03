@@ -56,7 +56,7 @@
             <div class="rocket__menu__item"><a class="rocket__menu__title rocket__menu__title--active" href="/components.html">Components</a>
               <div class="rocket__menu__content">
                 <nav class="rocket__submenu">
-                  <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Accordion" href="/components/accordion.html">Accordion</a></div>
+                  <div class="rocket__submenu__item"><a class="rocket__submenu__title rocket__submenu__title--active" title="Accordion" href="/components/accordion.html">Accordion</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Breadcrumb" href="/components/breadcrumb.html">Breadcrumb</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Button" href="/components/button.html">Button</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Checkbox" href="/components/checkbox.html">Checkbox</a></div>
@@ -65,7 +65,7 @@
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Listgroup" href="/components/listgroup.html">Listgroup</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Navbar" href="/components/navbar.html">Navbar</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Pagination" href="/components/pagination.html">Pagination</a></div>
-                  <div class="rocket__submenu__item"><a class="rocket__submenu__title rocket__submenu__title--active" title="Pill" href="/components/pill.html">Pill</a></div>
+                  <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Pill" href="/components/pill.html">Pill</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Radio Button" href="/components/radio-button.html">Radio Button</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Radio Dialog" href="/components/radio-dialog.html">Radio Dialog</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Select" href="/components/select.html">Select</a></div>
@@ -83,29 +83,97 @@
         <div class="__main__content">
           <div class="__section">
             <div class="__section__header">
-              <div class="__section__title">PILL</div>
+              <div class="__section__title rocket__h1">Accordion</div>
             </div>
-            <div class="__section__content">Contextual label or subtitle when paired with a heading.</div>
+            <div class="__section__content">Displays large amounts of content in a limited space through progressive disclosure.</div>
           </div>
           <div class="__section">
             <div class="__section__content">
               <div class="__showcase">
                 <div class="__showcase__frame">
-                  <div class="__showcase__glass"><a class="rocket__pill">FREE RANGE</a></div>
+                  <div class="__showcase__glass">
+                    <div class="rocket__accordion"> 
+                      <div class="rocket__accordion__item"> 
+                        <h5 class="rocket__accordion__title"> 
+                          <button class="rocket__accordion__button" aria-expanded="false" aria-controls="example-1">Example 1</button>
+                        </h5>
+                        <div class="rocket__accordion__content" id="example-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                      </div>
+                      <div class="rocket__accordion__item rocket__accordion__item--expanded"> 
+                        <h5 class="rocket__accordion__title"> 
+                          <button class="rocket__accordion__button" aria-expanded="true" aria-controls="example-2">Example 2</button>
+                        </h5>
+                        <div class="rocket__accordion__content" id="example-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                      </div>
+                      <div class="rocket__accordion__item"> 
+                        <h5 class="rocket__accordion__title"> 
+                          <button class="rocket__accordion__button" aria-expanded="false" aria-controls="example-3">Example 3</button>
+                        </h5>
+                        <div class="rocket__accordion__content" id="example-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                      </div>
+                      <div class="rocket__accordion__item"> 
+                        <h5 class="rocket__accordion__title"> 
+                          <button class="rocket__accordion__button" aria-expanded="false" aria-controls="example-4">Example 4</button>
+                        </h5>
+                        <div class="rocket__accordion__content" id="example-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="__showcase__labels"><span class="__showcase__label __showcase__label--active">HTML</span><span class="__showcase__label">React</span></div>
                 </div>
                 <div class="__showcase__description">
-                  <pre class="rocket__pre"><code class="language-html">&lt;span class="rocket__pill"&gt;FREE RANGE&lt;/span&gt;</code></pre>
+                  <pre class="rocket__pre"><code class="language-html">&lt;div class="rocket__accordion"&gt;
+   &lt;div class="rocket__accordion__item"&gt;
+       &lt;h5 class="rocket__accordion__title"&gt;
+           &lt;button class="rocket__accordion__button" aria-expanded="false" aria-controls="example-1"&gt;Example 1&lt;/button&gt;
+       &lt;/h5&gt;
+       &lt;div id="example-1.rocket__accordion__content"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div class="rocket__accordion__item rocket__accordion__item--expanded"&gt;
+       &lt;h5 class="rocket__accordion__title"&gt;
+           &lt;button class="rocket__accordion__button" aria-expanded="true" aria-controls="example-2"&gt;Example 2&lt;/button&gt;
+       &lt;/h5&gt;
+       &lt;div id="example-2" class="rocket__accordion__content"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div class="rocket__accordion__item"&gt;
+       &lt;h5 class="rocket__accordion__title"&gt;
+           &lt;button class="rocket__accordion__button" aria-expanded="false" aria-controls="example-3"&gt;Example 3&lt;/button&gt;
+       &lt;/h5&gt;
+       &lt;div id="example-3" class="rocket__accordion__content"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div class="rocket__accordion__item"&gt;
+       &lt;h5 class="rocket__accordion__title"&gt;
+           &lt;button class="rocket__accordion__button" aria-expanded="false" aria-controls="example-4"&gt;Example 4&lt;/button&gt;
+       &lt;/h5&gt;
+       &lt;div id="example-4" class="rocket__accordion__content"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                 </div>
               </div>
             </div>
           </div>
           <div class="__section __section--secondary">
             <div class="__section__header">
-              <div class="rocket__h2">Accessibility usage notes</div>
+              <div class="rocket__h2">Usage</div>
             </div>
             <div class="__section__content">
-              <div class="rocket__font rocket__font--medium">Consider the purpose and context in which the pill will be used.  It will need to be marked-up to indicate it's visual purpose. For instance, if it's intended use is to be part of a heading structure, then the appropriate heading tag <em>h1, h2, h3</em> must be applied.</div>
+              <div class="rocket__ul">
+                <div class="rocket__li">Large amounts of content are available but not all sections may be relevant to the user.</div>
+                <div class="rocket__li">It would be impractical to show to all the content in its entirety.</div>
+                <div class="rocket__li">Users need control over which content they would like to view and in what order.</div>
+              </div>
+            </div>
+          </div>
+          <div class="__section __section--secondary">
+            <div class="__section__header">
+              <div class="rocket__h2">Content</div>
+            </div>
+            <div class="__section__content">
+              <div class="rocket__ul">
+                <div class="rocket__li">Keep section labels clear and succinct.</div>
+                <div class="rocket__li">Use sentence case (only capitalise the first word of a phrase and any proper nouns) for section labels.</div>
+                <div class="rocket__li">Consider providing a link to another page if the section content is overly long.</div>
+              </div>
             </div>
           </div>
         </div>
