@@ -57,7 +57,7 @@
               <div class="rocket__menu__content">
                 <nav class="rocket__submenu">
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Accordion" href="/components/accordion.html">Accordion</a></div>
-                  <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Autocomplete" href="/components/autocomplete.html">Autocomplete</a></div>
+                  <div class="rocket__submenu__item"><a class="rocket__submenu__title rocket__submenu__title--active" title="Autocomplete" href="/components/autocomplete.html">Autocomplete</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Breadcrumb" href="/components/breadcrumb.html">Breadcrumb</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Button" href="/components/button.html">Button</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Checkbox" href="/components/checkbox.html">Checkbox</a></div>
@@ -68,7 +68,7 @@
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Pagination" href="/components/pagination.html">Pagination</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Pill" href="/components/pill.html">Pill</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Radio Button" href="/components/radio-button.html">Radio Button</a></div>
-                  <div class="rocket__submenu__item"><a class="rocket__submenu__title rocket__submenu__title--active" title="Radio Dialog" href="/components/radio-dialog.html">Radio Dialog</a></div>
+                  <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Radio Dialog" href="/components/radio-dialog.html">Radio Dialog</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Select" href="/components/select.html">Select</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Table" href="/components/table.html">Table</a></div>
                   <div class="rocket__submenu__item"><a class="rocket__submenu__title" title="Tag" href="/components/tag.html">Tag</a></div>
@@ -81,78 +81,75 @@
             </div>
           </div>
         </div>
-        <div class="__main__content __main__content--component-radio-dialog">
+        <div class="__main__content">
           <div class="__section">
             <div class="__section__header">
-              <div class="__section__title">Radio Dialog</div>
+              <div class="__section__title">Autocomplete</div>
             </div>
-            <div class="__section__content">List of two or more items containing a heading and description, where a user may select one mutually exclusive option.</div>
+            <div class="__section__content">Text field displaying search results as you type.</div>
           </div>
           <div class="__section">
             <div class="__section__content">
               <div class="__showcase">
                 <div class="__showcase__frame">
                   <div class="__showcase__glass">
-                    <div class="rocket__radio-dialog">
-                      <input class="rocket__radio-dialog__radio" id="early-start" type="radio" name="start-time">
-                      <label class="rocket__radio-dialog__label" for="early-start"><span class="rocket__radio-dialog__title">Early Start</span><span class="rocket__radio-dialog__content">2 hours prior to roster start time</span></label>
-                    </div>
-                    <div class="rocket__radio-dialog">
-                      <input class="rocket__radio-dialog__radio" id="late-start" type="radio" name="start-time" checked>
-                      <label class="rocket__radio-dialog__label" for="late-start"><span class="rocket__radio-dialog__title">Late Start</span><span class="rocket__radio-dialog__content">2 hours prior to roster start time</span></label>
+                    <div class="rocket__autocomplete">
+                      <div class="rocket__autocomplete__label" id="autocomplete-1-label" for="autocomplete-1-input">Search for wines</div>
+                      <div class="rocket__autocomplete__main">
+                        <div class="rocket__autocomplete__search" id="autocomplete-1" role="combobox" aria-expanded="false" aria-owns="autocomplete-1-listbox" aria-haspopup="listbox">
+                          <input class="rocket__autocomplete__input" type="text" aria-autocomplete="list" aria-controls="autocomplete-1-listbox" id="autocomplete-1-input" value="shir">
+                          <button class="rocket__autocomplete__close" aria-label="Close"></button>
+                        </div>
+                        <div class="rocket__autocomplete__list" id="autocomplete-1-listbox" aria-labelledby="autocomplete-1-label" role="listbox">
+                          <div class="rocket__autocomplete__item" role="option" aria-selected="false">Parsons Paddock <span class="rocket__autocomplete__match">Shir</span>az 750mL</div>
+                          <div class="rocket__autocomplete__item rocket__autocomplete__item--focus" role="option" aria-selected="true">Birds Eye View <span class="rocket__autocomplete__match">Shir</span>az 750ml</div>
+                          <div class="rocket__autocomplete__item" role="option" aria-selected="false">Red Wine <span class="rocket__autocomplete__match">Shir</span>az</div>
+                          <div class="rocket__autocomplete__item" role="option" aria-selected="false">Red Wine Cabernet <span class="rocket__autocomplete__match">Shir</span>az</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="__showcase__labels"><span class="__showcase__label __showcase__label--active">HTML</span><span class="__showcase__label">React</span></div>
                 </div>
                 <div class="__showcase__description">
-                  <pre class="rocket__pre"><code class="language-html">&lt;div class="rocket__radio-dialog"&gt;
-    &lt;input class="rocket__radio-dialog__radio" id="early-start" type="radio" name="start-time"&gt;
-    &lt;label class="rocket__radio-dialog__label" for="early-start"&gt;
-        &lt;span class="rocket__radio-dialog__title"&gt;Early Start&lt;/span&gt;
-        &lt;span class="rocket__radio-dialog__content"&gt;2 hours prior to roster start time&lt;/span&gt;
+                  <pre class="rocket__pre"><code class="language-html">&lt;div class="rocket__autocomplete"&gt;
+    &lt;label class="rocket__autocomplete__label"
+           id="autocomplete-1-label"
+           for="autocomplete-1-input"
+    &gt;
+        Search for wines
     &lt;/label&gt;
-&lt;/div&gt;
-&lt;div class="rocket__radio-dialog"&gt;
-    &lt;input class="rocket__radio-dialog__radio" id="late-start" type="radio" name="start-time" checked&gt;
-    &lt;label class="rocket__radio-dialog__label" for="late-start"&gt;
-        &lt;span class="rocket__radio-dialog__title"&gt;Late Start&lt;/span&gt;
-        &lt;span class="rocket__radio-dialog__content"&gt;2 hours prior to roster start time&lt;/span&gt;
-    &lt;/label&gt;
+    &lt;div class="rocket__autocomplete__main"&gt;
+        &lt;div class="rocket__autocomplete__search"
+             role="combobox"
+             aria-expanded="false"
+             aria-owns="autocomplete-1-listbox"
+             aria-haspopup="listbox"
+             id="autocomplete-1"
+        &gt;
+            &lt;input type="text" 
+                   class="rocket__autocomplete__input"
+                   aria-autocomplete="list"
+                   aria-controls="autocomplete-1-listbox"
+                   id="autocomplete-1-input"
+                   value="shir"
+            &gt;
+            &lt;button aria-label="Close" class="rocket__autocomplete__close"&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div aria-labelledby="autocomplete-1-label"
+             class="rocket__autocomplete__list"
+             role="listbox"
+             id="autocomplete-1-listbox"
+        &gt;
+            &lt;div role="option" class="rocket__autocomplete__item" aria-selected="false"&gt;Parsons Paddock &lt;span class="rocket__autocomplete__match"&gt;Shir&lt;/span&gt;az 750mL&lt;/div&gt;
+            &lt;div role="option" class="rocket__autocomplete__item rocket__autocomplete__item--focus" aria-selected="true"&gt;Birds Eye View &lt;span class="rocket__autocomplete__match"&gt;Shir&lt;/span&gt;az 750ml&lt;/div&gt;
+            &lt;div role="option" class="rocket__autocomplete__item" aria-selected="false"&gt;Red Wine &lt;span class="rocket__autocomplete__match"&gt;Shir&lt;/span&gt;az&lt;/div&gt;
+            &lt;div role="option" class="rocket__autocomplete__item" aria-selected="false"&gt;Red Wine Cabernet &lt;span class="rocket__autocomplete__match"&gt;Shir&lt;/span&gt;az&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="__section __section--secondary">
-            <div class="__section__header">
-              <div class="rocket__h2">Usage</div>
-            </div>
-            <div class="__section__content">
-              <ul class="rocket__ul">
-                <li class="rocket__li">Use when the items in a list each need more information than a single succinct label, otherwise use <a class="rocket__a" href="./radio-button.html">radio button</a>.</li>
-                <li class="rocket__li">Always have one option selected by default.</li>
-                <li class="rocket__li">Use a horizontal layout wherever possible.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="__section __section--secondary">
-            <div class="__section__header">
-              <div class="rocket__h2">Content</div>
-            </div>
-            <div class="__section__content">
-              <ul class="rocket__ul">
-                <li class="rocket__li">Use sentence case for headings (only capitalise the first word of a phrase and any proper nouns) for labels with more than one word (e.g. "Remember my details").</li>
-                <li class="rocket__li">Keep descriptions brief.</li>
-                <li class="rocket__li">Avoid punctuation.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="__section __section--secondary">
-            <div class="__section__header">
-              <div class="rocket__h2">Accessibility usage notes</div>
-            </div>
-            <div class="__section__content">
-              <div class="rocket__font rocket__font--medium">Associate each radio button with it's label.  Set the value of the <em>for</em> attribute on the label to the <em>id</em> of the radio.</div>
             </div>
           </div>
         </div>
