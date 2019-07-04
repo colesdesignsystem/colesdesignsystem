@@ -11,12 +11,12 @@
     <link rel="stylesheet" type="text/css" href="/assets/styles.css">
     <link rel="stylesheet" type="text/css" href="/assets/vendor/prism/prism.css">
     <style>
-      :not(pre) > code[class*="language-"], pre[class*="language-"] { background-color: transparent; }
+      :not(pre) > code[class*="language-"], pre[class*="language-"] { background-color: #f8f8f8; }
       code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap; }
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="__root">
       <header class="__header">
         <div class="__top-bar">
           <div class="__a">&#77;&#65;&#82;&#75; &#76;&#65;&#77;&#66;</div>
@@ -80,16 +80,39 @@
             </div>
           </div>
         </div>
-        <div class="__main__content">
-          <div class="__section">
-            <div class="__section__header">
-              <div class="__section__title rocket__h1">Get Started</div>
-            </div>
-            <div class="__section__content">
-              <p class="rocket__font rocket__font--medium">Two CSS files are required to be included in <em>head</em> section of your HTML or templates. <em>rocket.css</em> and <em>rocket.font.css</em>. <em>rocket.css </em> defines all styles of UI components. <em>rocket.font.css</em> contains references to the fonts required, without which, UI components still work. However, fonts are only rendered according to user's devices. By default, fonts are in a directory at the same level of the CSS files. In the case that you'd like to deploy them separately, edit the paths in <em>rocket.font.css</em>.</p>
-              <p class="rocket__font rocket__font--medium">Download :<a class="rocket__a" href="./downloads/beta.zip">beta.zip</a></p>
-            </div>
-          </div>
+        <div class="__main__content rocket"><h1>Get Started</h1>
+<p>The beta version only consists of CSS files, SVG icons and fonts.</p>
+<h3>Downloads</h3>
+<p>Uncompressed: <em>not available yet</em></p>
+<h3>Introduction</h3>
+<p>Two CSS files, <em>rocket.css</em> and <em>rocket.fonts.css</em>, are required to be included in <em>head</em> section of your HTML or templates. <em>rocket.css</em> defines all styles of UI components. <em>rocket.fonts.css</em> contains references to the fonts, without which, UI components can still work. However, fonts are only rendered according to user's devices. By default, font files are in <em>assets/fonts</em> directory. In the case that you'd like to deploy them separately, edit the paths in <em>rocket.fonts.css</em>.</p>
+<h5>Example of head section</h5>
+<pre><code class="language-html">&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;rocket.fonts.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;rocket.css&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+<h5>Content of rocket.fonts.css</h5>
+<pre><code class="language-css">@font-face {
+  font-family: &quot;ITC Avant Garde Pro&quot;;
+  src: url(&quot;./assets/fonts/ITCAvantGardePro/ITCAvantGardePro-Demi.otf&quot;) format(&quot;opentype&quot;);
+}
+@font-face {
+  font-family: &quot;Source Sans Pro&quot;;
+  src: url(&quot;./assets/fonts/SourceSansPro/SourceSansPro-Regular.ttf&quot;) format(&quot;truetype&quot;);
+}
+@font-face {
+  font-family: &quot;Source Sans Pro Semi Bold&quot;;
+  src: url(&quot;./assets/fonts/SourceSansPro/SourceSansPro-SemiBold.ttf&quot;) format(&quot;truetype&quot;);
+}
+@font-face {
+  font-family: &quot;Source Sans Pro Bold&quot;;
+  src: url(&quot;./assets/fonts/SourceSansPro/SourceSansPro-Bold.ttf&quot;) format(&quot;truetype&quot;);
+}
+</code></pre>
+
         </div>
       </main>
     </div>
