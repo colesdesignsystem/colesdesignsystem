@@ -23,6 +23,9 @@
 .__top-nav__items {
   margin-top: 26px;
 }
+.__top-nav__mobile {
+  display: none;
+}
 .__top-nav .rocket__nav__item {
   margin-left: 47px;
 }
@@ -41,6 +44,12 @@
   .__top-nav .rocket__nav__item {
     margin-left: 0;
     margin-right: 10px;
+  }
+  .__top-nav__mobile {
+    display: block;
+    position: absolute;
+    right: 24px;
+    top: 26px;
   }
 }
 .__main {
@@ -162,7 +171,7 @@
   width: 224px;
   min-width: 224px;
   padding-right: 32px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .__main__side-nav .rocket__menu__title {
   padding-left: 24px;
@@ -198,7 +207,7 @@
   }
   .__main__side-nav {
     order: 1;
-    margin-top: 20px;
+    padding-top: 24px;
     width: auto;
     margin-right: 0;
   }
