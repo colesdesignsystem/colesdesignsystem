@@ -757,8 +757,6 @@
 
 .rocket pre, .rocket__pre {
   font-family: "Source Sans Pro", arial, sans-serif;
-  padding: 0;
-  margin: 0;
   white-space: pre-wrap;
 }
 
