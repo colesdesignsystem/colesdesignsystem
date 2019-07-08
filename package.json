@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clear": "find -maxdepth 1 ! -name .git ! -name README.md ! -name package.json ! -name . -exec rm -rv {} \\;",
-    "copy": "cp -at ../rocket-website/public/. ."
+    "copy": "rsync -av --progress ../rocket-website/public/ ./ --exclude .git"
   },
   "repository": {
     "type": "git",
