@@ -208,8 +208,15 @@
   .__main__side-nav {
     order: 1;
     padding-top: 24px;
+    padding-right: 0;
     width: auto;
     margin-right: 0;
+  }
+  .__main .__side-nav__select-brand {
+    padding-right: 24px;
+  }
+  .__main .__side-nav__menu {
+    padding-right: 3px;
   }
   .__main__content {
     padding: 0 24px;

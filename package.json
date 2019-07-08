@@ -1,0 +1,20 @@
+{
+  "name": "colesdesignsystem.github.io",
+  "version": "1.0.0",
+  "description": "If you are seeing this message instead of the content of index.html, but at the same time, the content can be accessed from /index.html, then it may be Github is updating it.",
+  "main": "index.js",
+  "scripts": {
+    "clear": "find -maxdepth 1 ! -name .git ! -name README.md ! -name package.json ! -name . -exec rm -rv {} \\;",
+    "copy": "cp -at ../rocket-website/public/. ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colesdesignsystem/colesdesignsystem.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colesdesignsystem/colesdesignsystem.github.io/issues"
+  },
+  "homepage": "https://github.com/colesdesignsystem/colesdesignsystem.github.io#readme"
+}
