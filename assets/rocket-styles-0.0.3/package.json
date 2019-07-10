@@ -1,0 +1,32 @@
+{
+  "name": "@coles/rocket-styles",
+  "version": "0.0.3",
+  "description": "Stylesheets of Rocket Project",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server test -c-1 -p 5000",
+    "build:font-face": "sass src/scss/font-face.scss build/css/rocket.fonts.css",
+    "build:coles": "sass src/scss/rocket.scss build/css/rocket.css",
+    "build:flybuys": "sass src/scss/flybuys/rocket.scss build/css/rocket.flybuys.css",
+    "build:rocket": "npm run build:coles & npm run build:flybuys",
+    "build": "npm run build:font-face & npm run build:rocket",
+    "sass": "sass src/scss/rocket.scss test/coles/styles.css --watch",
+    "sass:flybuys": "sass src/scss/flybuys/rocket.scss test/flybuys/styles.css --watch",
+    "sass:liquorland": "sass src/scss/liquorland/rocket.scss test/liquorland/styles.css --watch",
+    "dev": "npm run serve | npm run sass",
+    "dev:coles": "npm run serve | npm run sass:coles | npm run test:copy:main",
+    "dev:flybuys": "npm run serve | npm run sass:flybuys | npm run test:copy:main",
+    "dev:liquorland": "npm run serve | npm run sass:liquorland | npm run test:copy:main",
+    "copy:css": "cp -a ./build/css/ ../rocket-website/public/assets/rocket",
+    "copy": "npm run copy:css",
+    "release": "cp ./build/css/*.css ./",
+    "test:copy:main": "echo ./test/flybuys/ ./test/liquorland/ ./test/vintagecellars/ ./test/firstchoice/ | xargs -n 1 cp ./test/coles/main.html"
+  },
+  "author": "Busheng Xi",
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "sass": "^1.21.0"
+  }
+}

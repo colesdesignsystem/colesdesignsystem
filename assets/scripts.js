@@ -7,7 +7,8 @@
 
     var globals = {
 
-        selectBrandElement: __( '#__select-brand' )
+        selectBrandElement: __( '#__select-brand' ),
+        cssPath: '/assets/rocket-styles-0.0.3/'
     };
 
 /* Init *******************************************************************************************/
@@ -48,15 +49,15 @@
         
         if ( brand === 'coles') {
 
-            elem.href = '/assets/rocket/css/rocket.css';
+            elem.href = globals.cssPath + 'rocket.css';
         }
         else if ( brand === 'flybuys' ) {
 
-            elem.href = '/assets/rocket/css/rocket.flybuys.css';
+            elem.href = globals.cssPath + 'rocket.flybuys.css';
         }
         else {
 
-            elem.href = '/assets/rocket/css/rocket.css';
+            elem.href = globals.cssPath + 'rocket.css';
         }
     }
 
@@ -67,7 +68,7 @@
 
 function __( string ) {
 
-    if ( string[0] === '#' ) {
+    if ( string[0] === '#' && string.indexOf( ' ' ) === -1 ) {
 
         return document.querySelector( string );
     }

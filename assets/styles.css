@@ -65,7 +65,7 @@
 }
 
 .__footer {
-  padding: 24px 52px;
+  padding: 12px 52px;
   text-align: right;
 }
 @media only screen and (max-width: 768px) {
@@ -185,25 +185,17 @@
   padding-right: 32px;
   padding-bottom: 20px;
 }
+.__main__side-nav .rocket__menu {
+  margin-left: 3px;
+}
 .__main__side-nav .rocket__menu__title {
   padding-left: 24px;
 }
-.__main__side-nav .rocket__menu__title:hover, .__main__side-nav .rocket__menu__title:focus {
-  margin-left: 3px;
-  padding-left: 21px;
-}
-.__main__side-nav .rocket__menu__title--active {
-  padding-left: 20px;
-}
-.__main__side-nav .rocket__menu__title--active:hover, .__main__side-nav .rocket__menu__title--active:focus {
-  padding-left: 21px;
+.__main__side-nav .rocket__menu__title--active:before {
+  left: -3px;
 }
 .__main__side-nav .rocket__submenu__title {
   padding-left: 40px;
-}
-.__main__side-nav .rocket__submenu__title:hover, .__main__side-nav .rocket__submenu__title:focus {
-  margin-left: 3px;
-  padding-left: 37px;
 }
 .__main .__side-nav__select-brand {
   padding-left: 24px;
