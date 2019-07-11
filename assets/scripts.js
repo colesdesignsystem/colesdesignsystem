@@ -8,7 +8,7 @@
     var globals = {
 
         selectBrandElement: __( '#__select-brand' ),
-        cssPath: '/assets/rocket-styles-0.0.3/'
+        cssPath: '/assets/rocket-styles/'
     };
 
 /* Init *******************************************************************************************/
@@ -76,9 +76,4 @@ function __( string ) {
 
         return document.querySelectorAll( string );
     }
-}
-
-function createIconTiles( icons ) {
-
-    console.log( icons );
 }
