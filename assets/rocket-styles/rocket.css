@@ -823,58 +823,33 @@
   color: #6e6e6e;
   background-color: white;
   display: inline-block;
-  padding: 7px 17px 9px 17px;
+  padding: 8px 18px 10px 18px;
   border-radius: 100px;
-  border: 1px solid #898d8e;
+  border: 2px solid white;
   outline: none;
   cursor: pointer;
   position: relative;
-  height: 40px;
-  /* For non-button elements */
-  box-sizing: border-box;
+  /* Non-button elements */
+  box-sizing: content-box;
   text-align: center;
-  box-shadow: none;
   text-decoration: none;
+  /* When container is display:flex */
+  min-width: 40px;
   transition: box-shadow 0.2s;
-}
-.rocket__button__icon {
-  width: 24px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-}
-.rocket__button__icon g {
-  opacity: 1;
-}
-.rocket__button__icon polygon {
-  opacity: 1;
-  stroke: #6e6e6e;
-}
-.rocket__button__icon line {
-  stroke: #6e6e6e;
-}
-.rocket__button__icon path {
-  stroke: #6e6e6e;
 }
 .rocket__button:before {
   position: absolute;
   content: "";
-  border: 2px solid transparent;
-  top: -3px;
+  top: 0px;
+  left: 0px;
   bottom: 0px;
-  left: -3px;
-  bottom: -3px;
-  box-sizing: border-box;
+  right: 0px;
+  border: 1px solid #898d8e;
   border-radius: 100px;
-  right: -3px;
 }
 .rocket__button:hover, .rocket__button:focus {
-  box-shadow: 0 0 0 5px #20211f;
   color: #20211f;
-}
-.rocket__button:hover:before, .rocket__button:focus:before {
-  border: 2px solid white;
+  box-shadow: 0 0 0 3px #20211f;
 }
 .rocket__button:hover g, .rocket__button:focus g {
   opacity: 1;
@@ -889,39 +864,18 @@
 .rocket__button:hover path, .rocket__button:focus path {
   stroke: #20211f;
 }
-.rocket__button:active {
+.rocket__button:hover:active, .rocket__button:focus:active {
   background-color: #e8e8e8;
-  border: 1px solid #20211f;
-  color: #20211f;
   box-shadow: none;
-  text-decoration: none;
+  border: 2px solid white;
 }
-.rocket__button:active:before {
-  border: 2px solid transparent;
+.rocket__button:hover:active:before, .rocket__button:focus:active:before {
+  border: 1px solid #20211f;
 }
 .rocket__button--icon {
-  width: 40px;
-  padding: 2px 0 0 0;
-  line-height: 38px;
-  vertical-align: middle;
-  text-align: center;
-  /* Added */
-  background-color: transparent;
-  border: 1px solid transparent;
-}
-.rocket__button--icon:hover, .rocket__button--icon:focus {
-  background-color: white;
-}
-.rocket__button--icon:hover:before, .rocket__button--icon:focus:before {
-  border: 3px solid white;
-}
-.rocket__button--icon:active {
-  background-color: #e8e8e8;
-  border-color: transparent;
-  box-shadow: none;
-}
-.rocket__button--icon:active:before {
-  border-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  max-height: 22px;
 }
 .rocket__button--icon g {
   opacity: 1;
@@ -936,35 +890,43 @@
 .rocket__button--icon path {
   stroke: #6e6e6e;
 }
+.rocket__button--icon:hover, .rocket__button--icon:focus {
+  padding-left: 0;
+  padding-right: 0;
+}
+.rocket__button--icon:hover:active, .rocket__button--icon:focus:active {
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 40px;
+}
+.rocket__button__icon {
+  max-width: 16px;
+  max-height: 18px;
+  /* Manually adjusted */
+  display: inline-block;
+  vertical-align: middle;
+}
+.rocket__button__icon g {
+  opacity: 1;
+}
+.rocket__button__icon polygon {
+  opacity: 1;
+  stroke: #6e6e6e;
+}
+.rocket__button__icon line {
+  stroke: #6e6e6e;
+}
+.rocket__button__icon path {
+  stroke: #6e6e6e;
+}
+.rocket__button__content {
+  display: inline-block;
+  margin-left: 6px;
+}
 .rocket__button--primary {
   background-color: #e01a22;
   color: white;
-  border: 1px solid #e01a22;
-}
-.rocket__button--primary:hover, .rocket__button--primary:focus {
-  color: white;
-  text-decoration: none;
-  background-color: #e01a22;
-}
-.rocket__button--primary:hover:before, .rocket__button--primary:focus:before {
   border: 2px solid white;
-}
-.rocket__button--primary:hover g, .rocket__button--primary:focus g {
-  opacity: 1;
-}
-.rocket__button--primary:hover polygon, .rocket__button--primary:focus polygon {
-  opacity: 1;
-  stroke: white;
-}
-.rocket__button--primary:hover line, .rocket__button--primary:focus line {
-  stroke: white;
-}
-.rocket__button--primary:hover path, .rocket__button--primary:focus path {
-  stroke: white;
-}
-.rocket__button--primary:active {
-  background-color: #c70007;
-  border-color: #c70007;
 }
 .rocket__button--primary g {
   opacity: 1;
@@ -979,44 +941,47 @@
 .rocket__button--primary path {
   stroke: white;
 }
-.rocket__button--secondary {
-  background-color: white;
-  border: 1px solid #6e6e6e;
+.rocket__button--primary:before {
+  border: none;
 }
-.rocket__button--secondary.rocket__button--icon {
-  background-color: white;
+.rocket__button--primary:hover, .rocket__button--primary:focus {
+  color: white;
 }
-.rocket__button--secondary.rocket__button--icon:hover:before, .rocket__button--secondary.rocket__button--icon:focus:before {
-  border: 2px solid white;
+.rocket__button--primary:hover g, .rocket__button--primary:focus g {
+  opacity: 1;
 }
-.rocket__button--secondary.rocket__button--icon:active {
-  background-color: #e8e8e8;
-  box-shadow: none;
-  border: 1px solid #6e6e6e;
+.rocket__button--primary:hover polygon, .rocket__button--primary:focus polygon {
+  opacity: 1;
+  stroke: white;
 }
-.rocket__button--secondary.rocket__button--icon:active:before {
-  border: 2px solid transparent;
+.rocket__button--primary:hover line, .rocket__button--primary:focus line {
+  stroke: white;
+}
+.rocket__button--primary:hover path, .rocket__button--primary:focus path {
+  stroke: white;
+}
+.rocket__button--primary:hover:active, .rocket__button--primary:focus:active {
+  background-color: #c70007;
+}
+.rocket__button--primary:hover:active:before, .rocket__button--primary:focus:active:before {
+  display: none;
 }
 .rocket__button--tertiary {
   border-color: transparent;
   background-color: transparent;
 }
+.rocket__button--tertiary:before {
+  border: none;
+}
 .rocket__button--tertiary:hover, .rocket__button--tertiary:focus {
   background-color: white;
 }
-.rocket__button--tertiary:hover:before, .rocket__button--tertiary:focus:before {
-  border: 3px solid white;
-}
-.rocket__button--tertiary:active {
-  box-shadow: none;
-  border: 1px solid transparent;
+.rocket__button--tertiary:hover:active, .rocket__button--tertiary:focus:active {
+  border-color: transparent;
   background-color: transparent;
 }
-.rocket__button--tertiary:active:before {
-  border: 3px solid transparent;
-}
-.rocket__button--tertiary:active.rocket__button--icon {
-  background-color: #e8e8e8;
+.rocket__button--tertiary:hover:active:before, .rocket__button--tertiary:focus:active:before {
+  display: none;
 }
 
 .rocket ul, .rocket__ul {
@@ -1312,7 +1277,7 @@
   text-align: right;
 }
 .rocket__dialog__buttons .rocket__button {
-  margin-left: 2px;
+  margin-left: 6px;
 }
 
 .rocket__table {
