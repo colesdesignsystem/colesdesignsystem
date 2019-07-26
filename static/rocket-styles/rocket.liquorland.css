@@ -377,7 +377,8 @@
 .rocket h6, .rocket__h6 {
   margin: 0;
   padding: 0;
-  font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-weight: 600;
   letter-spacing: 2px;
   font-size: 14px;
   line-height: 19px; }
@@ -435,6 +436,10 @@
   .rocket__font--tiny {
     font-size: 12px;
     line-height: 23px; }
+  .rocket__font--italic {
+    font-style: italic; }
+  .rocket__font--semibold {
+    font-weight: 600; }
 
 .rocket p, .rocket__p {
   font-size: 16px;
@@ -557,7 +562,8 @@
         color: #20211f; }
 
 .rocket__pill {
-  font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-weight: 600;
   display: inline-block;
   padding: 2px 8px;
   border-radius: 20px;
@@ -568,7 +574,8 @@
   letter-spacing: 2px; }
 
 .rocket__button {
-  font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: #6e6e6e;
@@ -762,7 +769,8 @@
     content: none; }
 
 .rocket__listgroup__title {
-  font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-weight: 600;
   padding: 11px 0 10px 0;
   color: #20211f;
   font-size: 14px;
@@ -963,7 +971,8 @@
   margin-bottom: 16px; }
 
 .rocket__th {
-  font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-weight: 600;
   color: #6e6e6e;
   font-size: 16px;
   line-height: 22px;
@@ -984,7 +993,8 @@
   /* START: Secondary *******************************************************************************/
   /* END: Secondary *********************************************************************************/ }
   .rocket__nav__item {
-    font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
+    font-family: "Source Sans Pro", arial, sans-serif;
+    font-weight: 600;
     display: inline-block;
     font-size: 16px;
     line-height: 22px;
@@ -1126,7 +1136,8 @@
       .rocket__nav.rocket__nav--pill .rocket__nav__item--active:before {
         background-color: transparent; }
   .rocket__nav__pill {
-    font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
+    font-family: "Source Sans Pro", arial, sans-serif;
+    font-weight: 600;
     display: inline-block;
     padding: 2px 8px;
     border-radius: 100px;
@@ -1183,7 +1194,8 @@
       color: #20211f; }
 
 .rocket__tag {
-  font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-weight: 600;
   font-size: 14px;
   line-height: 21px;
   padding: 5px 33px 6px 11px;
@@ -1252,7 +1264,8 @@
     right: 24px;
     z-index: 2; }
   .rocket__thumbnail__pill {
-    font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
+    font-family: "Source Sans Pro", arial, sans-serif;
+    font-weight: 600;
     display: inline-block;
     padding: 2px 8px;
     border-radius: 100px;
@@ -1423,7 +1436,8 @@
   background-repeat: no-repeat; }
 
 .rocket__menu__title {
-  font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-weight: 600;
   padding: 8px 16px 10px 16px;
   color: #6e6e6e;
   line-height: 22px;
@@ -1472,13 +1486,15 @@
       text-decoration: none;
       font-family: "Source Sans Pro", arial, sans-serif; }
   .rocket__submenu__title--active {
-    font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
+    font-family: "Source Sans Pro", arial, sans-serif;
+    font-weight: 600;
     text-decoration: underline;
     color: #FEDC02;
     display: block; }
 
 .rocket__pagination__prev, .rocket__pagination__next, .rocket__pagination__page {
-  font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-weight: 600;
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -1595,7 +1611,8 @@
 
 .rocket__autocomplete__match {
   color: #20211f;
-  font-family: "Source Sans Pro Semi Bold", arial, sans-serif; }
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-weight: 600; }
 
 .rocket__accordion {
   background-color: white; }
@@ -1740,7 +1757,8 @@
   .rocket__progressbar__label {
     font-size: 14px;
     line-height: 19px;
-    font-family: "Source Sans Pro Semi Bold", arial, sans-serif;
+    font-family: "Source Sans Pro", arial, sans-serif;
+    font-weight: 600;
     color: #6e6e6e;
     text-align: center; }
   .rocket__progressbar__progress {

@@ -1,15 +1,17 @@
 @font-face {
   font-family: "ITC Avant Garde Pro";
-  src: url("./assets/fonts/ITCAvantGardePro/ITCAvantGardePro-Demi.otf") format("opentype"); }
+  src: local("itc-avant-garde-gothic-pro"), url("./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.woff") format("woff"), url("./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.woff2") format("woff2"), url("./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.ttf") format("truetype"), url("./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.eot?#iefix") format("embedded-opentype"); }
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("./assets/fonts/SourceSansPro/SourceSansPro-Regular.ttf") format("truetype"); }
+  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("./assets/fonts/SourceSansPro/SourceSansPro-Regular.woff2") format("woff2"), url("./assets/fonts/SourceSansPro/SourceSansPro-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Source Sans Pro Semi Bold";
-  src: url("./assets/fonts/SourceSansPro/SourceSansPro-SemiBold.ttf") format("truetype"); }
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  src: local("Source Sans Pro Italic"), local("SourceSansPro-Italic"), url("./assets/fonts/SourceSansPro/SourceSansPro-Italic.woff2") format("woff2"), url("./assets/fonts/SourceSansPro/SourceSansPro-Italic.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Source Sans Pro Bold";
-  src: url("./assets/fonts/SourceSansPro/SourceSansPro-Bold.ttf") format("truetype"); }
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  src: local("Source Sans Pro SemiBold"), local("SourceSansPro-SemiBold"), url("./assets/fonts/SourceSansPro/SourceSansPro-SemiBold.woff2") format("woff2"), url("./assets/fonts/SourceSansPro/SourceSansPro-SemiBold.ttf") format("truetype"); }
