@@ -15,19 +15,37 @@
 <h5>Content of rocket.fonts.css</h5>
 <pre><code class="language-css">@font-face {
     font-family: &quot;ITC Avant Garde Pro&quot;;
-    src: url(&quot;./assets/fonts/ITCAvantGardePro/ITCAvantGardePro-Demi.otf&quot;) format(&quot;opentype&quot;);
+    src: local(&quot;itc-avant-garde-gothic-pro&quot;), 
+         url(&quot;./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.woff&quot;) format(&quot;woff&quot;), 
+         url(&quot;./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.woff2&quot;) format(&quot;woff2&quot;), 
+         url(&quot;./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.ttf&quot;) format(&quot;truetype&quot;), 
+         url(&quot;./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.eot?#iefix&quot;) format(&quot;embedded-opentype&quot;);
 }
+
 @font-face {
     font-family: &quot;Source Sans Pro&quot;;
-    src: url(&quot;./assets/fonts/SourceSansPro/SourceSansPro-Regular.ttf&quot;) format(&quot;truetype&quot;);
+    src: local(&quot;Source Sans Pro Regular&quot;), 
+         local(&quot;SourceSansPro-Regular&quot;), 
+         url(&quot;./assets/fonts/SourceSansPro/SourceSansPro-Regular.woff2&quot;) format(&quot;woff2&quot;), 
+         url(&quot;./assets/fonts/SourceSansPro/SourceSansPro-Regular.ttf&quot;) format(&quot;truetype&quot;); 
 }
+
 @font-face {
-    font-family: &quot;Source Sans Pro Semi Bold&quot;;
-    src: url(&quot;./assets/fonts/SourceSansPro/SourceSansPro-SemiBold.ttf&quot;) format(&quot;truetype&quot;);
+    font-family: &quot;Source Sans Pro&quot;;
+    font-style: italic;
+    src: local(&quot;Source Sans Pro Italic&quot;), 
+         local(&quot;SourceSansPro-Italic&quot;), 
+         url(&quot;./assets/fonts/SourceSansPro/SourceSansPro-Italic.woff2&quot;) format(&quot;woff2&quot;), 
+         url(&quot;./assets/fonts/SourceSansPro/SourceSansPro-Italic.ttf&quot;) format(&quot;truetype&quot;);
 }
+
 @font-face {
-    font-family: &quot;Source Sans Pro Bold&quot;;
-    src: url(&quot;./assets/fonts/SourceSansPro/SourceSansPro-Bold.ttf&quot;) format(&quot;truetype&quot;);
+    font-family: &quot;Source Sans Pro&quot;;
+    font-weight: 600;
+    src: local(&quot;Source Sans Pro SemiBold&quot;), 
+         local(&quot;SourceSansPro-SemiBold&quot;), 
+         url(&quot;./assets/fonts/SourceSansPro/SourceSansPro-SemiBold.woff2&quot;) format(&quot;woff2&quot;), 
+         url(&quot;./assets/fonts/SourceSansPro/SourceSansPro-SemiBold.ttf&quot;) format(&quot;truetype&quot;); 
 }
 </code></pre>
-</div></main><footer class="__footer"><div class="__updated-at">Last updated @ <em>Jul 26, 2019, 11:58 AM GMT+10</em></div></footer></div><script src="/static/scripts.js"></script><script src="/static/vendor/prism/prism.js"></script></body></html>
+</div></main><footer class="__footer"><div class="__updated-at">Last updated @ <em>Jul 26, 2019, 12:10 PM GMT+10</em></div></footer></div><script src="/static/scripts.js"></script><script src="/static/vendor/prism/prism.js"></script></body></html>
