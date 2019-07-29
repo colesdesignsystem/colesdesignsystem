@@ -4,9 +4,9 @@
   "description": "If you are seeing this message instead of the content of index.html, but at the same time, the content can be accessed from /index.html, then it may be Github is updating it.",
   "main": "index.js",
   "scripts": {
-    "clean": "find -maxdepth 1 ! -name .git ! -name README.md ! -name package.json ! -name . -exec rm -rv {} \\;",
+    "clean": "find -maxdepth 1 ! -name .git ! -name downloads ! -name README.md ! -name package.json ! -name . -exec rm -rv {} \\;",
     "copy:main": "rsync -av ../rocket-website/dist/ ./ --exclude .git",
-    "copy:downloads": "mkdir ./downloads && cp ../rocket-styles/dist/* ./downloads",
+    "copy:downloads": "cp ../rocket-styles/dist/* ./downloads",
     "build": "npm run clean && npm run copy:main && npm run copy:downloads"
   },
   "repository": {
