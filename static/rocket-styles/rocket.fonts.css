@@ -1,6 +1,6 @@
 @font-face {
   font-family: "ITC Avant Garde Pro";
-  src: local("itc-avant-garde-gothic-pro"), url("./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.woff") format("woff"), url("./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.woff2") format("woff2"), url("./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.ttf") format("truetype"), url("./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.eot?#iefix") format("embedded-opentype"); }
+  src: local("ITCAvantGardePro-Bk"), url("./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.woff2") format("woff2"), url("./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.woff") format("woff"), url("./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.ttf") format("truetype"), url("./assets/fonts/AvantGardePro/AvantGardeGothicITCW05-Demi.eot?#iefix") format("embedded-opentype"); }
 
 @font-face {
   font-family: "Source Sans Pro";
@@ -17,5 +17,9 @@
   src: local("Source Sans Pro SemiBold"), local("SourceSansPro-SemiBold"), url("./assets/fonts/SourceSansPro/SourceSansPro-SemiBold.woff2") format("woff2"), url("./assets/fonts/SourceSansPro/SourceSansPro-SemiBold.ttf") format("truetype"); }
 
 @font-face {
+  font-family: "Coles Haptic";
+  src: local("Coles Haptic Bold"), url("./assets/fonts/ColesHaptic/coleshapticbd-webfont.woff") format("woff"), url("./assets/fonts/ColesHaptic/coleshapticbd-webfont.ttf") format("truetype"), url("./assets/fonts/ColesHaptic/coleshapticbd-webfont.eot?#iefix") format("embedded-opentype"); }
+
+@font-face {
   font-family: "Volkswagen";
-  src: local("Volkswagen"), url("./assets/fonts/Volkswagen/Volkswagen-Bold.ttf") format("truetype"); }
+  src: local("Volkswagen Bold"), url("./assets/fonts/Volkswagen/Volkswagen-Bold.ttf") format("truetype"); }
