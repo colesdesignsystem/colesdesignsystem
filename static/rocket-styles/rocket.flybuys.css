@@ -1570,7 +1570,8 @@
       .rocket__nav--primary .rocket__nav__item:focus:active {
         background-color: #104B91;
         border: none;
-        padding: 12px 24px 15px 24px; }
+        padding: 12px 24px 15px 24px;
+        color: white; }
     .rocket .rocket__nav--primary .rocket__nav__item--active,
     .rocket__nav--primary .rocket__nav__item--active {
       border: 0;
