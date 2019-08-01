@@ -1443,8 +1443,7 @@
     .rocket__nav__item:hover,
     .rocket__nav__item:focus {
       box-shadow: 0 0 0 3px #20211f;
-      z-index: 1;
-      color: white; }
+      z-index: 1; }
       .rocket .rocket__nav__item:hover:active, .rocket .rocket__nav__item:focus:active,
       .rocket__nav__item:hover:active,
       .rocket__nav__item:focus:active {
@@ -1480,53 +1479,41 @@
       left: 22px; }
   .rocket .rocket__nav--primary .rocket__nav__item,
   .rocket__nav--primary .rocket__nav__item {
-    padding: 12px 24px 15px 24px;
     color: white;
-    background-color: #97002C;
-    margin-top: 2px;
-    margin-bottom: 2px; }
+    background-color: #97002C; }
     .rocket .rocket__nav--primary .rocket__nav__item:hover, .rocket .rocket__nav--primary .rocket__nav__item:focus,
     .rocket__nav--primary .rocket__nav__item:hover,
     .rocket__nav--primary .rocket__nav__item:focus {
-      border: 2px solid white;
-      padding-left: 22px;
-      padding-right: 22px;
-      margin-top: 0;
-      margin-bottom: 0;
       background-color: #97002C;
-      color: white; }
+      color: white;
+      box-shadow: 0 0 0 5px #20211f; }
       .rocket .rocket__nav--primary .rocket__nav__item:hover:active, .rocket .rocket__nav--primary .rocket__nav__item:focus:active,
       .rocket__nav--primary .rocket__nav__item:hover:active,
       .rocket__nav--primary .rocket__nav__item:focus:active {
         background-color: #820026;
         border: none;
-        padding: 12px 24px 15px 24px;
         color: white; }
+      .rocket .rocket__nav--primary .rocket__nav__item:hover:after, .rocket .rocket__nav--primary .rocket__nav__item:focus:after,
+      .rocket__nav--primary .rocket__nav__item:hover:after,
+      .rocket__nav--primary .rocket__nav__item:focus:after {
+        position: absolute;
+        content: "";
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        border: 2px solid white; }
     .rocket .rocket__nav--primary .rocket__nav__item--active,
     .rocket__nav--primary .rocket__nav__item--active {
       border: 0;
       background-color: #820026; }
+      .rocket .rocket__nav--primary .rocket__nav__item--active:hover, .rocket .rocket__nav--primary .rocket__nav__item--active:focus,
+      .rocket__nav--primary .rocket__nav__item--active:hover,
+      .rocket__nav--primary .rocket__nav__item--active:focus {
+        background-color: #820026; }
       .rocket .rocket__nav--primary .rocket__nav__item--active:before,
       .rocket__nav--primary .rocket__nav__item--active:before {
         background-color: white; }
-  .rocket .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:hover, .rocket .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:focus,
-  .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:hover,
-  .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:focus {
-    padding-left: 46px;
-    padding-right: 22px; }
-    .rocket .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:hover svg, .rocket .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:focus svg,
-    .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:hover svg,
-    .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:focus svg {
-      left: 20px; }
-    .rocket .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:hover:active, .rocket .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:focus:active,
-    .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:hover:active,
-    .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:focus:active {
-      padding-left: 48px;
-      padding-right: 24px; }
-      .rocket .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:hover:active svg, .rocket .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:focus:active svg,
-      .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:hover:active svg,
-      .rocket__nav--primary.rocket__nav--icon .rocket__nav__item:focus:active svg {
-        left: 22px; }
   .rocket .rocket__nav--secondary .rocket__nav__pill,
   .rocket__nav--secondary .rocket__nav__pill {
     background-color: #6e6e6e;
@@ -1586,28 +1573,26 @@
     .rocket .rocket__nav.rocket__nav--vertical .rocket__nav__item:hover, .rocket .rocket__nav.rocket__nav--vertical .rocket__nav__item:focus,
     .rocket__nav.rocket__nav--vertical .rocket__nav__item:hover,
     .rocket__nav.rocket__nav--vertical .rocket__nav__item:focus {
-      margin-bottom: 3px;
-      padding-bottom: 7px;
       color: #20211f; }
       .rocket .rocket__nav.rocket__nav--vertical .rocket__nav__item:hover:active, .rocket .rocket__nav.rocket__nav--vertical .rocket__nav__item:focus:active,
       .rocket__nav.rocket__nav--vertical .rocket__nav__item:hover:active,
       .rocket__nav.rocket__nav--vertical .rocket__nav__item:focus:active {
-        margin-bottom: 0;
-        padding-bottom: 10px;
         background-color: #e8e8e8; }
     .rocket .rocket__nav.rocket__nav--vertical .rocket__nav__item--active,
     .rocket__nav.rocket__nav--vertical .rocket__nav__item--active {
-      border-left: 4px solid #97002C;
-      padding-left: 12px;
       color: #20211f; }
-      .rocket .rocket__nav.rocket__nav--vertical .rocket__nav__item--active:hover, .rocket .rocket__nav.rocket__nav--vertical .rocket__nav__item--active:focus,
-      .rocket__nav.rocket__nav--vertical .rocket__nav__item--active:hover,
-      .rocket__nav.rocket__nav--vertical .rocket__nav__item--active:focus {
-        padding-left: 16px;
-        border-left: 0; }
       .rocket .rocket__nav.rocket__nav--vertical .rocket__nav__item--active:before,
       .rocket__nav.rocket__nav--vertical .rocket__nav__item--active:before {
         background-color: transparent; }
+      .rocket .rocket__nav.rocket__nav--vertical .rocket__nav__item--active:after,
+      .rocket__nav.rocket__nav--vertical .rocket__nav__item--active:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background-color: #97002C; }
   .rocket .rocket__nav.rocket__nav--pill .rocket__nav__item,
   .rocket__nav.rocket__nav--pill .rocket__nav__item {
     border-radius: 44px;
@@ -1809,19 +1794,34 @@
     line-height: 45px;
     color: white;
     display: inline-block;
-    padding: 0 5px 1px 5px;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    transition: border 0.2s; }
+    position: relative; }
+    .rocket .rocket__thumbnail__title:before,
+    .rocket__thumbnail__title:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -5px;
+      bottom: -2px;
+      right: -5px;
+      box-shadow: 0 0 0 2px transparent;
+      border-radius: 2px;
+      transition: box-shadow 0.2s; }
     .rocket .rocket__thumbnail__title:hover, .rocket .rocket__thumbnail__title:focus,
     .rocket__thumbnail__title:hover,
     .rocket__thumbnail__title:focus {
       border-color: white; }
+      .rocket .rocket__thumbnail__title:hover:before, .rocket .rocket__thumbnail__title:focus:before,
+      .rocket__thumbnail__title:hover:before,
+      .rocket__thumbnail__title:focus:before {
+        box-shadow: 0 0 0 2px white; }
       .rocket .rocket__thumbnail__title:hover:active, .rocket .rocket__thumbnail__title:focus:active,
       .rocket__thumbnail__title:hover:active,
       .rocket__thumbnail__title:focus:active {
-        text-decoration: none;
-        border: 2px solid transparent; }
+        text-decoration: none; }
+        .rocket .rocket__thumbnail__title:hover:active:before, .rocket .rocket__thumbnail__title:focus:active:before,
+        .rocket__thumbnail__title:hover:active:before,
+        .rocket__thumbnail__title:focus:active:before {
+          box-shadow: 0 0 0 2px transparent; }
 
 .rocket .rocket__tile,
 .rocket__tile {
@@ -1846,20 +1846,35 @@
     font-size: 16px;
     line-height: 22px;
     color: #20211f;
-    padding: 0 5px 1px 5px;
-    border: 2px solid transparent;
-    border-radius: 4px;
     margin-bottom: 14px;
-    transition: border 0.2s; }
+    position: relative; }
+    .rocket .rocket__tile__title:before,
+    .rocket__tile__title:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -5px;
+      bottom: -2px;
+      right: -5px;
+      box-shadow: 0 0 0 2px transparent;
+      border-radius: 2px;
+      transition: box-shadow 0.2s; }
     .rocket .rocket__tile__title:hover, .rocket .rocket__tile__title:focus,
     .rocket__tile__title:hover,
     .rocket__tile__title:focus {
       border-color: #20211f; }
+      .rocket .rocket__tile__title:hover:before, .rocket .rocket__tile__title:focus:before,
+      .rocket__tile__title:hover:before,
+      .rocket__tile__title:focus:before {
+        box-shadow: 0 0 0 2px #20211f; }
       .rocket .rocket__tile__title:hover:active, .rocket .rocket__tile__title:focus:active,
       .rocket__tile__title:hover:active,
       .rocket__tile__title:focus:active {
-        text-decoration: none;
-        border: 2px solid transparent; }
+        text-decoration: none; }
+        .rocket .rocket__tile__title:hover:active:before, .rocket .rocket__tile__title:focus:active:before,
+        .rocket__tile__title:hover:active:before,
+        .rocket__tile__title:focus:active:before {
+          box-shadow: 0 0 0 2px transparent; }
   .rocket .rocket__tile__price,
   .rocket__tile__price {
     font-family: "ITC Avant Garde Pro", arial, sans-serif;
