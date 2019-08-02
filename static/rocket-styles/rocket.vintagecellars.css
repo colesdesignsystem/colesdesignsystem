@@ -552,7 +552,8 @@
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 14px;
-  line-height: 19px; }
+  line-height: 19px;
+  text-transform: uppercase; }
   .rocket .rocket h6--black100, .rocket .rocket__h6--black100,
   .rocket h6--black100,
   .rocket__h6--black100 {
