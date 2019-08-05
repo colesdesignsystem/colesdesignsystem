@@ -2405,17 +2405,17 @@
     background-color: white;
     position: relative;
     transition: box-shadow 0.2s; }
-    .rocket .rocket__listbox__option:hover, .rocket .rocket__listbox__option:focus, .rocket .rocket__listbox__option--focus,
+    .rocket .rocket__listbox__option:hover, .rocket .rocket__listbox__option:focus, .rocket .rocket__listbox__option--focused,
     .rocket__listbox__option:hover,
     .rocket__listbox__option:focus,
-    .rocket__listbox__option--focus {
+    .rocket__listbox__option--focused {
       box-shadow: 0 0 0 3px #20211f;
       z-index: 1;
       color: #20211f; }
-      .rocket .rocket__listbox__option:hover:active, .rocket .rocket__listbox__option:focus:active, .rocket .rocket__listbox__option--focus:active,
+      .rocket .rocket__listbox__option:hover:active, .rocket .rocket__listbox__option:focus:active, .rocket .rocket__listbox__option--focused:active,
       .rocket__listbox__option:hover:active,
       .rocket__listbox__option:focus:active,
-      .rocket__listbox__option--focus:active {
+      .rocket__listbox__option--focused:active {
         box-shadow: none;
         color: #20211f;
         background-color: #e8e8e8; }
