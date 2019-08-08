@@ -929,10 +929,10 @@
   background-color: white;
   display: inline-block;
   padding: 8px 18px 10px 18px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
   border: 2px solid white;
   outline: none;
   cursor: pointer;
@@ -953,10 +953,10 @@
     bottom: 0px;
     right: 0px;
     border: 1px solid #898d8e;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px; }
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; }
   .rocket .rocket__button:hover, .rocket .rocket__button:focus,
   .rocket__button:hover,
   .rocket__button:focus {
@@ -1672,7 +1672,7 @@
         background-color: #047CC2; }
   .rocket .rocket__nav.rocket__nav--pill .rocket__nav__item,
   .rocket__nav.rocket__nav--pill .rocket__nav__item {
-    border-radius: 6px;
+    border-radius: 44px;
     padding: 3px 12px 5px 12px;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
@@ -1729,12 +1729,12 @@
   transition: box-shadow 0.2s; }
   .rocket .rocket__toolbar__item:first-child,
   .rocket__toolbar__item:first-child {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px; }
+    border-top-left-radius: 44px;
+    border-bottom-left-radius: 44px; }
   .rocket .rocket__toolbar__item:last-child,
   .rocket__toolbar__item:last-child {
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px; }
+    border-top-right-radius: 44px;
+    border-bottom-right-radius: 44px; }
   .rocket .rocket__toolbar__item:hover, .rocket .rocket__toolbar__item:focus,
   .rocket__toolbar__item:hover,
   .rocket__toolbar__item:focus {
@@ -1778,7 +1778,7 @@
   padding: 5px 33px 6px 11px;
   border: 1px solid #898d8e;
   display: inline-block;
-  border-radius: 6px;
+  border-radius: 44px;
   color: #6e6e6e;
   position: relative;
   background-color: white; }
