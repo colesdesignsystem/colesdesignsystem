@@ -905,6 +905,10 @@
       .rocket__a:visited:hover:active,
       .rocket__a:visited:focus:active {
         color: #20211f; }
+  .rocket .rocket a--image:hover:before, .rocket .rocket__a--image:hover:before,
+  .rocket a--image:hover:before,
+  .rocket__a--image:hover:before {
+    box-shadow: none; }
 
 .rocket .rocket__pill,
 .rocket__pill {
@@ -1899,6 +1903,17 @@
         .rocket__thumbnail__title:hover:active:before,
         .rocket__thumbnail__title:focus:active:before {
           box-shadow: 0 0 0 2px transparent; }
+    .rocket .rocket__thumbnail__title:visited,
+    .rocket__thumbnail__title:visited {
+      color: white; }
+      .rocket .rocket__thumbnail__title:visited:hover, .rocket .rocket__thumbnail__title:visited:focus,
+      .rocket__thumbnail__title:visited:hover,
+      .rocket__thumbnail__title:visited:focus {
+        color: white; }
+        .rocket .rocket__thumbnail__title:visited:hover:active, .rocket .rocket__thumbnail__title:visited:focus:active,
+        .rocket__thumbnail__title:visited:hover:active,
+        .rocket__thumbnail__title:visited:focus:active {
+          color: white; }
 
 .rocket .rocket__tile,
 .rocket__tile {
@@ -2112,7 +2127,8 @@
   font-size: 16px;
   display: block;
   text-decoration: none;
-  transition: box-shadow 0.2s; }
+  transition: box-shadow 0.2s;
+  outline: none; }
   .rocket .rocket__menu__title:hover, .rocket .rocket__menu__title:focus,
   .rocket__menu__title:hover,
   .rocket__menu__title:focus {
@@ -2147,7 +2163,8 @@
   z-index: 0;
   display: block;
   text-decoration: none;
-  transition: box-shadow 0.2s; }
+  transition: box-shadow 0.2s;
+  outline: none; }
   .rocket .rocket__submenu__title:hover, .rocket .rocket__submenu__title:focus,
   .rocket__submenu__title:hover,
   .rocket__submenu__title:focus {
