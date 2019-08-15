@@ -5,9 +5,10 @@
 .__top-bar {
   background-color: #e01A22;
   height: 4px; }
-  .__top-bar .__a {
+  .__top-bar .__author {
     position: absolute;
-    color: white; }
+    color: white;
+    top: 4px; }
 
 .__top-nav {
   display: flex;
@@ -447,6 +448,18 @@
   color: #484B54; }
 
 /* Override Rocket ********************************************************************************/
+.__website.__index .rocket__button, .__website.__index.rocket__button {
+  border-radius: 100px; }
+  .__website.__index .rocket__button:before, .__website.__index.rocket__button:before {
+    border-radius: 100px; }
+  .__website.__index .rocket__button--primary, .__website.__index.rocket__button--primary {
+    background-color: #e01A22;
+    color: white; }
+    .__website.__index .rocket__button--primary:focus, .__website.__index .rocket__button--primary:hover, .__website.__index.rocket__button--primary:focus, .__website.__index.rocket__button--primary:hover {
+      color: white; }
+      .__website.__index .rocket__button--primary:focus:active, .__website.__index .rocket__button--primary:hover:active, .__website.__index.rocket__button--primary:focus:active, .__website.__index.rocket__button--primary:hover:active {
+        background-color: #c70007; }
+
 .__website .rocket, .__website.rocket {
   /* Markdown */ }
   .__website .rocket a, .__website.rocket a {
@@ -498,17 +511,6 @@
     .__website .rocket__nav.rocket__nav--pill .rocket__nav__item--active, .__website.rocket__nav.rocket__nav--pill .rocket__nav__item--active {
       background-color: #e01A22;
       color: white; }
-  .__website .rocket__button, .__website.rocket__button {
-    border-radius: 100px; }
-    .__website .rocket__button:before, .__website.rocket__button:before {
-      border-radius: 100px; }
-    .__website .rocket__button--primary, .__website.rocket__button--primary {
-      background-color: #e01A22;
-      color: white; }
-      .__website .rocket__button--primary:focus, .__website .rocket__button--primary:hover, .__website.rocket__button--primary:focus, .__website.rocket__button--primary:hover {
-        color: white; }
-        .__website .rocket__button--primary:focus:active, .__website .rocket__button--primary:hover:active, .__website.rocket__button--primary:focus:active, .__website.rocket__button--primary:hover:active {
-          background-color: #c70007; }
   .__website .rocket__d1, .__website .rocket__d2, .__website .rocket h1, .__website .rocket h2, .__website .rocket h3, .__website .rocket h4, .__website .rocket h5, .__website .rocket h6, .__website.rocket__d1, .__website.rocket__d2, .__website.rocket h1, .__website.rocket h2, .__website.rocket h3, .__website.rocket h4, .__website.rocket h5, .__website.rocket h6 {
     font-family: "ITC Avant Garde Pro", "century gothic", arial, sans-serif; }
   .__website .rocket .community h5, .__website.rocket .community h5 {

@@ -3,15 +3,15 @@
   src: url("./assets/fonts/ColesHaptic/coleshapticbd-webfont.woff") format("woff"), url("./assets/fonts/ColesHaptic/coleshapticbd-webfont.ttf") format("truetype"), url("./assets/fonts/ColesHaptic/coleshapticbd-webfont.eot?#iefix") format("embedded-opentype"); }
 
 @font-face {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans";
   src: url("./assets/fonts/SourceSansPro/SourceSansPro-Regular.woff2") format("woff2"), url("./assets/fonts/SourceSansPro/SourceSansPro-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans";
   font-style: italic;
   src: url("./assets/fonts/SourceSansPro/SourceSansPro-Italic.woff2") format("woff2"), url("./assets/fonts/SourceSansPro/SourceSansPro-Italic.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans";
   font-weight: 600;
   src: url("./assets/fonts/SourceSansPro/SourceSansPro-SemiBold.woff2") format("woff2"), url("./assets/fonts/SourceSansPro/SourceSansPro-SemiBold.ttf") format("truetype"); }
