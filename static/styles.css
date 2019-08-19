@@ -448,141 +448,115 @@
   color: #484B54; }
 
 /* Override Rocket ********************************************************************************/
-.__website.__index .rocket__button, .__website.__index.rocket__button {
-  border-radius: 100px; }
-  .__website.__index .rocket__button:before, .__website.__index.rocket__button:before {
-    border-radius: 100px; }
-  .__website.__index .rocket__button--primary, .__website.__index.rocket__button--primary {
-    background-color: #e01A22;
-    color: white; }
-    .__website.__index .rocket__button--primary:focus, .__website.__index .rocket__button--primary:hover, .__website.__index.rocket__button--primary:focus, .__website.__index.rocket__button--primary:hover {
-      color: white; }
-      .__website.__index .rocket__button--primary:focus:active, .__website.__index .rocket__button--primary:hover:active, .__website.__index.rocket__button--primary:focus:active, .__website.__index.rocket__button--primary:hover:active {
-        background-color: #c70007; }
-
-.__website .rocket, .__website.rocket {
+.__website {
   /* Markdown */ }
-  .__website .rocket a, .__website.rocket a {
-    color: #e01A22; }
-    .__website .rocket a:hover, .__website .rocket a:focus, .__website.rocket a:hover, .__website.rocket a:focus {
-      color: #e01A22; }
-      .__website .rocket a:hover:before, .__website .rocket a:focus:before, .__website.rocket a:hover:before, .__website.rocket a:focus:before {
-        box-shadow: 0 0 0 2px #e01A22; }
-    .__website .rocket a:visited:hover, .__website .rocket a:visited:focus, .__website.rocket a:visited:hover, .__website.rocket a:visited:focus {
-      color: #e01A22; }
-    .__website .rocket a.rocket__button--icon:hover:before, .__website .rocket a.rocket__button--icon:focus:before, .__website.rocket a.rocket__button--icon:hover:before, .__website.rocket a.rocket__button--icon:focus:before {
-      box-shadow: none; }
-    .__website .rocket a.rocket__a--image:hover:before, .__website.rocket a.rocket__a--image:hover:before {
-      box-shadow: none; }
-  .__website .rocket__thumbnail .rocket__thumbnail__title:hover, .__website .rocket__thumbnail .rocket__thumbnail__title:focus, .__website.rocket__thumbnail .rocket__thumbnail__title:hover, .__website.rocket__thumbnail .rocket__thumbnail__title:focus {
-    color: white; }
-    .__website .rocket__thumbnail .rocket__thumbnail__title:hover:before, .__website .rocket__thumbnail .rocket__thumbnail__title:focus:before, .__website.rocket__thumbnail .rocket__thumbnail__title:hover:before, .__website.rocket__thumbnail .rocket__thumbnail__title:focus:before {
-      box-shadow: 0 0 0 2px white; }
-  .__website .rocket__thumbnail .rocket__thumbnail__title:active:before, .__website.rocket__thumbnail .rocket__thumbnail__title:active:before {
-    box-shadow: none; }
-  .__website .rocket__thumbnail .rocket__thumbnail__title:visited:hover, .__website .rocket__thumbnail .rocket__thumbnail__title:visited:focus, .__website.rocket__thumbnail .rocket__thumbnail__title:visited:hover, .__website.rocket__thumbnail .rocket__thumbnail__title:visited:focus {
-    color: white; }
-  .__website .rocket__tile .rocket__tile__title, .__website.rocket__tile .rocket__tile__title {
-    color: #20211f; }
-    .__website .rocket__tile .rocket__tile__title:hover, .__website .rocket__tile .rocket__tile__title:focus, .__website.rocket__tile .rocket__tile__title:hover, .__website.rocket__tile .rocket__tile__title:focus {
-      color: #20211f; }
-      .__website .rocket__tile .rocket__tile__title:hover:before, .__website .rocket__tile .rocket__tile__title:focus:before, .__website.rocket__tile .rocket__tile__title:hover:before, .__website.rocket__tile .rocket__tile__title:focus:before {
-        box-shadow: 0 0 0 2px #20211f; }
-    .__website .rocket__tile .rocket__tile__title:active:before, .__website.rocket__tile .rocket__tile__title:active:before {
-      box-shadow: none; }
-    .__website .rocket__tile .rocket__tile__title:visited:hover, .__website .rocket__tile .rocket__tile__title:visited:focus, .__website.rocket__tile .rocket__tile__title:visited:hover, .__website.rocket__tile .rocket__tile__title:visited:focus {
-      color: #20211f; }
-  .__website .rocket__nav .rocket__nav__item:hover, .__website .rocket__nav .rocket__nav__item:focus, .__website.rocket__nav .rocket__nav__item:hover, .__website.rocket__nav .rocket__nav__item:focus {
-    color: white; }
-    .__website .rocket__nav .rocket__nav__item:hover:before, .__website .rocket__nav .rocket__nav__item:focus:before, .__website.rocket__nav .rocket__nav__item:hover:before, .__website.rocket__nav .rocket__nav__item:focus:before {
-      box-shadow: none; }
-  .__website .rocket__nav .rocket__nav__item:visited:hover, .__website .rocket__nav .rocket__nav__item:visited:focus, .__website.rocket__nav .rocket__nav__item:visited:hover, .__website.rocket__nav .rocket__nav__item:visited:focus {
-    color: white; }
-  .__website .rocket__nav.rocket__nav--pill .rocket__nav__item--active, .__website.rocket__nav.rocket__nav--pill .rocket__nav__item--active {
-    background-color: blue; }
-  .__website .rocket__menu__title--active:before, .__website.rocket__menu__title--active:before {
-    background-color: #e01A22; }
-  .__website .rocket__submenu__title--active, .__website.rocket__submenu__title--active {
-    color: #e01A22; }
-  .__website .rocket__nav.rocket__nav--pill .rocket__nav__item, .__website.rocket__nav.rocket__nav--pill .rocket__nav__item {
+  .__website.__index .rocket__button, .__website.__index.rocket__button {
     border-radius: 100px; }
-    .__website .rocket__nav.rocket__nav--pill .rocket__nav__item:hover, .__website .rocket__nav.rocket__nav--pill .rocket__nav__item:focus, .__website.rocket__nav.rocket__nav--pill .rocket__nav__item:hover, .__website.rocket__nav.rocket__nav--pill .rocket__nav__item:focus {
-      color: #20211f; }
-    .__website .rocket__nav.rocket__nav--pill .rocket__nav__item--active, .__website.rocket__nav.rocket__nav--pill .rocket__nav__item--active {
+    .__website.__index .rocket__button:before, .__website.__index.rocket__button:before {
+      border-radius: 100px; }
+    .__website.__index .rocket__button--primary, .__website.__index.rocket__button--primary {
       background-color: #e01A22;
       color: white; }
-  .__website .rocket__d1, .__website .rocket__d2, .__website .rocket h1, .__website .rocket h2, .__website .rocket h3, .__website .rocket h4, .__website .rocket h5, .__website .rocket h6, .__website.rocket__d1, .__website.rocket__d2, .__website.rocket h1, .__website.rocket h2, .__website.rocket h3, .__website.rocket h4, .__website.rocket h5, .__website.rocket h6 {
-    font-family: "ITC Avant Garde Pro", "century gothic", arial, sans-serif; }
-  .__website .rocket .community h5, .__website.rocket .community h5 {
+      .__website.__index .rocket__button--primary:focus, .__website.__index .rocket__button--primary:hover, .__website.__index.rocket__button--primary:focus, .__website.__index.rocket__button--primary:hover {
+        color: white; }
+        .__website.__index .rocket__button--primary:focus:active, .__website.__index .rocket__button--primary:hover:active, .__website.__index.rocket__button--primary:focus:active, .__website.__index.rocket__button--primary:hover:active {
+          background-color: #c70007; }
+  .__website.__index .community h5 {
     color: #e01A22; }
-  .__website .rocket h1 + p, .__website.rocket h1 + p {
+  .__website h1 {
+    font-family: "ITC Avant Garde Pro"; }
+  .__website h1 + p {
     font-size: 20px; }
-  .__website .rocket h2,
-  .__website .rocket h3,
-  .__website .rocket h4, .__website.rocket h2,
-  .__website.rocket h3,
-  .__website.rocket h4 {
-    margin-top: 1em; }
-  .__website .rocket h5, .__website.rocket h5 {
-    margin-top: 1.5em; }
-  .__website .rocket h6, .__website.rocket h6 {
+  .__website h2,
+  .__website h3,
+  .__website h4 {
+    margin-top: 1em;
+    font-family: "ITC Avant Garde Pro"; }
+  .__website h5 {
+    margin-top: 1.5em;
+    font-family: "ITC Avant Garde Pro"; }
+  .__website h6 {
     margin-top: 2em; }
-  .__website .rocket h2 + p,
-  .__website .rocket h2 + ul,
-  .__website .rocket h2 + ol,
-  .__website .rocket h2 + table,
-  .__website .rocket h2 + dl,
-  .__website .rocket h2 + pre,
-  .__website .rocket h2 + blockquote,
-  .__website .rocket h3 + p,
-  .__website .rocket h3 + ul,
-  .__website .rocket h3 + ol,
-  .__website .rocket h3 + table,
-  .__website .rocket h3 + dl,
-  .__website .rocket h3 + pre,
-  .__website .rocket h3 + blockquote,
-  .__website .rocket h4 + p,
-  .__website .rocket h4 + ul,
-  .__website .rocket h4 + ol,
-  .__website .rocket h4 + table,
-  .__website .rocket h4 + dl,
-  .__website .rocket h4 + pre,
-  .__website .rocket h4 + blockquote,
-  .__website .rocket h5 + p,
-  .__website .rocket h5 + ul,
-  .__website .rocket h5 + ol,
-  .__website .rocket h5 + table,
-  .__website .rocket h5 + dl,
-  .__website .rocket h5 + pre,
-  .__website .rocket h5 + blockquote, .__website.rocket h2 + p,
-  .__website.rocket h2 + ul,
-  .__website.rocket h2 + ol,
-  .__website.rocket h2 + table,
-  .__website.rocket h2 + dl,
-  .__website.rocket h2 + pre,
-  .__website.rocket h2 + blockquote,
-  .__website.rocket h3 + p,
-  .__website.rocket h3 + ul,
-  .__website.rocket h3 + ol,
-  .__website.rocket h3 + table,
-  .__website.rocket h3 + dl,
-  .__website.rocket h3 + pre,
-  .__website.rocket h3 + blockquote,
-  .__website.rocket h4 + p,
-  .__website.rocket h4 + ul,
-  .__website.rocket h4 + ol,
-  .__website.rocket h4 + table,
-  .__website.rocket h4 + dl,
-  .__website.rocket h4 + pre,
-  .__website.rocket h4 + blockquote,
-  .__website.rocket h5 + p,
-  .__website.rocket h5 + ul,
-  .__website.rocket h5 + ol,
-  .__website.rocket h5 + table,
-  .__website.rocket h5 + dl,
-  .__website.rocket h5 + pre,
-  .__website.rocket h5 + blockquote {
+  .__website h2 + p,
+  .__website h2 + ul,
+  .__website h2 + ol,
+  .__website h2 + table,
+  .__website h2 + dl,
+  .__website h2 + pre,
+  .__website h2 + blockquote,
+  .__website h3 + p,
+  .__website h3 + ul,
+  .__website h3 + ol,
+  .__website h3 + table,
+  .__website h3 + dl,
+  .__website h3 + pre,
+  .__website h3 + blockquote,
+  .__website h4 + p,
+  .__website h4 + ul,
+  .__website h4 + ol,
+  .__website h4 + table,
+  .__website h4 + dl,
+  .__website h4 + pre,
+  .__website h4 + blockquote,
+  .__website h5 + p,
+  .__website h5 + ul,
+  .__website h5 + ol,
+  .__website h5 + table,
+  .__website h5 + dl,
+  .__website h5 + pre,
+  .__website h5 + blockquote {
     margin-top: -0.25em; }
+  .__website .rocket a {
+    color: #e01A22; }
+    .__website .rocket a:hover, .__website .rocket a:focus {
+      color: #e01A22; }
+      .__website .rocket a:hover:before, .__website .rocket a:focus:before {
+        box-shadow: 0 0 0 2px #e01A22; }
+      .__website .rocket a:hover:active, .__website .rocket a:focus:active {
+        color: #20211f; }
+        .__website .rocket a:hover:active:before, .__website .rocket a:focus:active:before {
+          box-shadow: none; }
+    .__website .rocket a:visited {
+      color: #6e6e6e; }
+      .__website .rocket a:visited:hover, .__website .rocket a:visited:focus {
+        color: #e01A22; }
+    .__website .rocket a.rocket__button--icon:hover:before, .__website .rocket a.rocket__button--icon:focus:before {
+      box-shadow: none; }
+    .__website .rocket a.rocket__a--image:hover:before {
+      box-shadow: none; }
+  .__website .rocket__thumbnail .rocket__thumbnail__title:hover, .__website .rocket__thumbnail .rocket__thumbnail__title:focus {
+    color: white; }
+    .__website .rocket__thumbnail .rocket__thumbnail__title:hover:before, .__website .rocket__thumbnail .rocket__thumbnail__title:focus:before {
+      box-shadow: 0 0 0 2px white; }
+  .__website .rocket__thumbnail .rocket__thumbnail__title:active:before {
+    box-shadow: none; }
+  .__website .rocket__thumbnail .rocket__thumbnail__title:visited:hover, .__website .rocket__thumbnail .rocket__thumbnail__title:visited:focus {
+    color: white; }
+  .__website .rocket__tile .rocket__tile__title {
+    color: #20211f; }
+    .__website .rocket__tile .rocket__tile__title:hover, .__website .rocket__tile .rocket__tile__title:focus {
+      color: #20211f; }
+      .__website .rocket__tile .rocket__tile__title:hover:before, .__website .rocket__tile .rocket__tile__title:focus:before {
+        box-shadow: 0 0 0 2px #20211f; }
+    .__website .rocket__tile .rocket__tile__title:active:before {
+      box-shadow: none; }
+    .__website .rocket__tile .rocket__tile__title:visited:hover, .__website .rocket__tile .rocket__tile__title:visited:focus {
+      color: #20211f; }
+  .__website .rocket a.rocket__nav__item:hover:before, .__website .rocket a.rocket__nav__item:focus:before {
+    box-shadow: none; }
+  .__website .rocket__menu__title--active:before {
+    background-color: #e01A22; }
+  .__website .rocket__submenu__title--active {
+    color: #e01A22; }
+  .__website .rocket__nav.rocket__nav--pill .rocket__nav__item {
+    border-radius: 100px; }
+    .__website .rocket__nav.rocket__nav--pill .rocket__nav__item:hover, .__website .rocket__nav.rocket__nav--pill .rocket__nav__item:focus {
+      color: #20211f; }
+    .__website .rocket__nav.rocket__nav--pill .rocket__nav__item--active {
+      background-color: #e01A22;
+      color: white; }
+  .__website .rocket__d1, .__website .rocket__d2, .__website .rocket h1, .__website .rocket h2, .__website .rocket h3, .__website .rocket h4, .__website .rocket h5, .__website .rocket h6 {
+    font-family: "ITC Avant Garde Pro", "century gothic", arial, sans-serif; }
 
 /* Override Prism *********************************************************************************/
 :not(pre) > code[class*="language-"],

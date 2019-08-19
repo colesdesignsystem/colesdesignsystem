@@ -1584,6 +1584,10 @@
         right: -2px;
         bottom: -2px;
         border: 2px solid white; }
+      .rocket .rocket__nav--primary .rocket__nav__item:hover:visited, .rocket .rocket__nav--primary .rocket__nav__item:focus:visited,
+      .rocket__nav--primary .rocket__nav__item:hover:visited,
+      .rocket__nav--primary .rocket__nav__item:focus:visited {
+        color: white; }
     .rocket .rocket__nav--primary .rocket__nav__item--active,
     .rocket__nav--primary .rocket__nav__item--active {
       border: 0;
@@ -1632,6 +1636,10 @@
         .rocket__nav--secondary .rocket__nav__item:hover:active path,
         .rocket__nav--secondary .rocket__nav__item:focus:active path {
           stroke: #20211f; }
+      .rocket .rocket__nav--secondary .rocket__nav__item:hover:visited, .rocket .rocket__nav--secondary .rocket__nav__item:focus:visited,
+      .rocket__nav--secondary .rocket__nav__item:hover:visited,
+      .rocket__nav--secondary .rocket__nav__item:focus:visited {
+        color: #20211f; }
     .rocket .rocket__nav--secondary .rocket__nav__item--active,
     .rocket__nav--secondary .rocket__nav__item--active {
       color: #20211f; }
