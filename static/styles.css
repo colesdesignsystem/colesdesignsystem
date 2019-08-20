@@ -506,6 +506,12 @@
   .__website h5 + pre,
   .__website h5 + blockquote {
     margin-top: -0.25em; }
+  .__website .__top-nav .rocket__nav__item--active {
+    background-color: #e01A22;
+    color: white; }
+    .__website .__top-nav .rocket__nav__item--active:hover, .__website .__top-nav .rocket__nav__item--active:focus {
+      background-color: white;
+      color: #20211f; }
   .__website .rocket a {
     color: #e01A22; }
     .__website .rocket a:hover, .__website .rocket a:focus {
@@ -520,10 +526,10 @@
       color: #6e6e6e; }
       .__website .rocket a:visited:hover, .__website .rocket a:visited:focus {
         color: #e01A22; }
-    .__website .rocket a.rocket__button--icon:hover:before, .__website .rocket a.rocket__button--icon:focus:before {
-      box-shadow: none; }
-    .__website .rocket a.rocket__a--image:hover:before {
-      box-shadow: none; }
+  .__website .rocket__button--icon:hover:before, .__website .rocket__button--icon:focus:before {
+    box-shadow: none; }
+  .__website .rocket__a--image:focus:before {
+    box-shadow: 0 0 0 2px #e01A22; }
   .__website .rocket__thumbnail .rocket__thumbnail__title:hover, .__website .rocket__thumbnail .rocket__thumbnail__title:focus {
     color: white; }
     .__website .rocket__thumbnail .rocket__thumbnail__title:hover:before, .__website .rocket__thumbnail .rocket__thumbnail__title:focus:before {
@@ -548,13 +554,6 @@
     background-color: #e01A22; }
   .__website .rocket__submenu__title--active {
     color: #e01A22; }
-  .__website .rocket__nav.rocket__nav--pill .rocket__nav__item {
-    border-radius: 100px; }
-    .__website .rocket__nav.rocket__nav--pill .rocket__nav__item:hover, .__website .rocket__nav.rocket__nav--pill .rocket__nav__item:focus {
-      color: #20211f; }
-    .__website .rocket__nav.rocket__nav--pill .rocket__nav__item--active {
-      background-color: #e01A22;
-      color: white; }
   .__website .rocket__d1, .__website .rocket__d2, .__website .rocket h1, .__website .rocket h2, .__website .rocket h3, .__website .rocket h4, .__website .rocket h5, .__website .rocket h6 {
     font-family: "ITC Avant Garde Pro", "century gothic", arial, sans-serif; }
 
