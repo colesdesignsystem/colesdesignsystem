@@ -450,18 +450,18 @@
 /* Override Rocket ********************************************************************************/
 .__website {
   /* Markdown */ }
-  .__website.__index .rocket__button {
+  .__website .__index .rocket__button {
     border-radius: 100px; }
-    .__website.__index .rocket__button:before {
+    .__website .__index .rocket__button:before {
       border-radius: 100px; }
-    .__website.__index .rocket__button--primary {
+    .__website .__index .rocket__button--primary {
       background-color: #e01A22;
       color: white; }
-      .__website.__index .rocket__button--primary:focus, .__website.__index .rocket__button--primary:hover {
+      .__website .__index .rocket__button--primary:focus, .__website .__index .rocket__button--primary:hover {
         color: white; }
-        .__website.__index .rocket__button--primary:focus:active, .__website.__index .rocket__button--primary:hover:active {
+        .__website .__index .rocket__button--primary:focus:active, .__website .__index .rocket__button--primary:hover:active {
           background-color: #c70007; }
-  .__website.__index .community h5 {
+  .__website .__index .community h5 {
     color: #e01A22; }
   .__website h1 {
     font-family: "ITC Avant Garde Pro"; }
