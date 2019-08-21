@@ -449,6 +449,8 @@
 /* Override Rocket ********************************************************************************/
 .__website {
   /* Markdown */ }
+  .__website .__index .rocket__d1, .__website .__index .rocket__d2 {
+    font-family: "ITC Avant Garde Pro"; }
   .__website .__index .rocket__button {
     border-radius: 100px; }
     .__website .__index .rocket__button:before {
@@ -462,18 +464,16 @@
           background-color: #c70007; }
   .__website .__index .community h5 {
     color: #e01A22; }
-  .__website h1 {
-    font-family: "ITC Avant Garde Pro"; }
+  .__website h1, .__website h2, .__website h3, .__website h4, .__website h5 {
+    font-family: "ITC Avant Garde Pro", "century gothic", arial, sans-serif; }
   .__website h1 + p {
     font-size: 20px; }
   .__website h2,
   .__website h3,
   .__website h4 {
-    margin-top: 1em;
-    font-family: "ITC Avant Garde Pro"; }
+    margin-top: 1em; }
   .__website h5 {
-    margin-top: 1.5em;
-    font-family: "ITC Avant Garde Pro"; }
+    margin-top: 1.5em; }
   .__website h6 {
     margin-top: 2em; }
   .__website h2 + p,
@@ -553,8 +553,6 @@
     background-color: #e01A22; }
   .__website .rocket__submenu__title--active {
     color: #e01A22; }
-  .__website .rocket__d1, .__website .rocket__d2, .__website .rocket h1, .__website .rocket h2, .__website .rocket h3, .__website .rocket h4, .__website .rocket h5, .__website .rocket h6 {
-    font-family: "ITC Avant Garde Pro", "century gothic", arial, sans-serif; }
 
 /* Override Prism *********************************************************************************/
 :not(pre) > code[class*="language-"],
