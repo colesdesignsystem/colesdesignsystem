@@ -535,8 +535,10 @@
       box-shadow: 0 0 0 2px white; }
   .__website .rocket__thumbnail .rocket__thumbnail__title:active:before {
     box-shadow: none; }
-  .__website .rocket__thumbnail .rocket__thumbnail__title:visited:hover, .__website .rocket__thumbnail .rocket__thumbnail__title:visited:focus {
+  .__website .rocket__thumbnail .rocket__thumbnail__title:visited {
     color: white; }
+    .__website .rocket__thumbnail .rocket__thumbnail__title:visited:hover, .__website .rocket__thumbnail .rocket__thumbnail__title:visited:focus {
+      color: white; }
   .__website .rocket__tile .rocket__tile__title {
     color: #20211f; }
     .__website .rocket__tile .rocket__tile__title:hover, .__website .rocket__tile .rocket__tile__title:focus {
