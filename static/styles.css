@@ -430,12 +430,11 @@
 .__showcase__label {
   padding: 15px 31px;
   display: inline-block;
-  cursor: not-allowed;
+  cursor: pointer;
   color: rgba(32, 33, 31, 0.65);
   font-size: 16px; }
   .__showcase__label--active {
     border-bottom: 4px solid #e01A22;
-    cursor: default;
     color: #20211f; }
 
 .__showcase__description {
