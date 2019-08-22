@@ -513,19 +513,21 @@
     box-shadow: none; }
   .__website .__index .rocket__d1, .__website .__index .rocket__d2 {
     font-family: "ITC Avant Garde Pro"; }
-  .__website .__index .rocket__button--primary {
-    background-color: #e01A22;
-    color: white; }
-    .__website .__index .rocket__button--primary:focus, .__website .__index .rocket__button--primary:hover {
+  .__website .__index .rocket__button {
+    border-radius: 100px; }
+    .__website .__index .rocket__button--primary {
+      background-color: #e01A22;
       color: white; }
-      .__website .__index .rocket__button--primary:focus:active, .__website .__index .rocket__button--primary:hover:active {
-        background-color: #c70007; }
-    .__website .__index .rocket__button--primary:before {
+      .__website .__index .rocket__button--primary:focus, .__website .__index .rocket__button--primary:hover {
+        color: white; }
+        .__website .__index .rocket__button--primary:focus:active, .__website .__index .rocket__button--primary:hover:active {
+          background-color: #c70007; }
+      .__website .__index .rocket__button--primary:before {
+        box-shadow: none; }
+    .__website .__index .rocket__button--secondary:focus, .__website .__index .rocket__button--secondary:hover {
+      color: #20211f; }
+    .__website .__index .rocket__button--secondary:before {
       box-shadow: none; }
-  .__website .__index .rocket__button--secondary:focus, .__website .__index .rocket__button--secondary:hover {
-    color: #20211f; }
-  .__website .__index .rocket__button--secondary:before {
-    box-shadow: none; }
   .__website .__index .community h5 {
     color: #e01A22; }
   .__website .rocket__button--icon:hover:before, .__website .rocket__button--icon:focus:before {
@@ -554,26 +556,30 @@
       box-shadow: none; }
     .__website .rocket__tile .rocket__tile__title:visited:hover, .__website .rocket__tile .rocket__tile__title:visited:focus {
       color: #20211f; }
-  .__website .rocket__menu__title:hover, .__website .rocket__menu__title:focus {
-    color: #20211f; }
-    .__website .rocket__menu__title:hover:visited, .__website .rocket__menu__title:focus:visited {
+  .__website .rocket__menu__title {
+    color: #6e6e6e; }
+    .__website .rocket__menu__title:hover, .__website .rocket__menu__title:focus {
       color: #20211f; }
-    .__website .rocket__menu__title:hover:before, .__website .rocket__menu__title:focus:before {
-      box-shadow: none; }
-  .__website .rocket__menu__title--active:before {
-    background-color: #e01A22; }
-  .__website .rocket__submenu__title:hover, .__website .rocket__submenu__title:focus {
-    color: #20211f; }
-    .__website .rocket__submenu__title:hover:visited, .__website .rocket__submenu__title:focus:visited {
+      .__website .rocket__menu__title:hover:visited, .__website .rocket__menu__title:focus:visited {
+        color: #20211f; }
+      .__website .rocket__menu__title:hover:before, .__website .rocket__menu__title:focus:before {
+        box-shadow: none; }
+    .__website .rocket__menu__title--active:before {
+      background-color: #e01A22; }
+  .__website .rocket__submenu__title {
+    color: #6e6e6e; }
+    .__website .rocket__submenu__title:hover, .__website .rocket__submenu__title:focus {
       color: #20211f; }
-  .__website .rocket__submenu__title--active {
-    color: #e01A22; }
-    .__website .rocket__submenu__title--active:visited {
+      .__website .rocket__submenu__title:hover:visited, .__website .rocket__submenu__title:focus:visited {
+        color: #20211f; }
+    .__website .rocket__submenu__title--active {
       color: #e01A22; }
-    .__website .rocket__submenu__title--active:hover, .__website .rocket__submenu__title--active:focus {
-      color: #e01A22; }
-      .__website .rocket__submenu__title--active:hover:visited, .__website .rocket__submenu__title--active:focus:visited {
+      .__website .rocket__submenu__title--active:visited {
         color: #e01A22; }
+      .__website .rocket__submenu__title--active:hover, .__website .rocket__submenu__title--active:focus {
+        color: #e01A22; }
+        .__website .rocket__submenu__title--active:hover:visited, .__website .rocket__submenu__title--active:focus:visited {
+          color: #e01A22; }
 
 /* Override Prism *********************************************************************************/
 :not(pre) > code[class*="language-"],
