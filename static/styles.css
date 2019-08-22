@@ -532,8 +532,6 @@
     color: #e01A22; }
   .__website .rocket__button--icon:hover:before, .__website .rocket__button--icon:focus:before {
     box-shadow: none; }
-  .__website .rocket__a--image:focus:before {
-    box-shadow: 0 0 0 2px #e01A22; }
   .__website .rocket__a--image:hover:before {
     box-shadow: none; }
   .__website .rocket__thumbnail .rocket__thumbnail__title:hover, .__website .rocket__thumbnail .rocket__thumbnail__title:focus {
