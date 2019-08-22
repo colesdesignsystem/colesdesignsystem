@@ -38,7 +38,9 @@
       display: block;
       position: absolute;
       right: 24px;
-      top: 26px; } }
+      top: 26px; }
+      .__top-nav__mobile .rocket__button--icon {
+        border-radius: 100px; } }
 
 .__main {
   display: flex;
