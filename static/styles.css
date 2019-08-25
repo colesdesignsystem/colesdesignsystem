@@ -113,6 +113,8 @@
     justify-content: space-between; }
   .__index__column {
     flex-basis: 48%; }
+  .__index .rocket__button--secondary {
+    color: #6e6e6e; }
 
 @media only screen and (max-width: 768px) {
   .__index__section {
@@ -447,9 +449,10 @@
   font-size: 14px;
   color: #484B54; }
 
-/* Override Rocket ********************************************************************************/
 .__website {
-  /* Markdown */ }
+  /* Default markups ********************************************************************************/
+  /* Site wise **************************************************************************************/
+  /* Rocket styles **********************************************************************************/ }
   .__website h1, .__website h2, .__website h3, .__website h4, .__website h5 {
     font-family: "ITC Avant Garde Pro", "century gothic", arial, sans-serif; }
   .__website h1 + p {
@@ -517,6 +520,8 @@
     font-family: "ITC Avant Garde Pro"; }
   .__website .__index .rocket__button {
     border-radius: 100px; }
+    .__website .__index .rocket__button:before {
+      border-radius: 100px; }
     .__website .__index .rocket__button--primary {
       background-color: #e01A22;
       color: white; }
