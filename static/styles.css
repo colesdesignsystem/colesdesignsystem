@@ -1,6 +1,11 @@
 /* Breakpoints */
 .__header {
-  min-height: 95px; }
+  height: 95px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white; }
 
 .__top-bar {
   background-color: #e01A22;
@@ -46,9 +51,11 @@
   display: flex;
   flex-grow: 1; }
   .__main__content {
+    margin-top: 95px;
     padding-right: 52px; }
     @media only screen and (max-width: 768px) {
       .__main__content {
+        margin-top: 0;
         padding-right: 24px; } }
 
 .__footer {
@@ -61,7 +68,8 @@
     color: #3f4140; }
 
 .__index {
-  width: 100%; }
+  width: 100%;
+  margin-top: 95px; }
   .__index__background {
     flex-grow: 1;
     order: 3;
@@ -117,28 +125,36 @@
     color: #6e6e6e; }
 
 @media only screen and (max-width: 768px) {
-  .__index__section {
-    display: block;
-    padding: 0 24px;
-    padding-top: 50px; }
-    .__index__section--even .__index__content {
-      padding-left: 0; }
-    .__index__section:first-child {
-      padding-top: 0; }
-  .__index__background {
-    margin-top: 25px; }
-  .__index__network {
-    display: block;
-    padding-left: 24px;
-    padding-right: 24px; }
-  .__index__column {
-    margin-bottom: 50px; } }
+  .__index {
+    margin-top: 0; }
+    .__index__section {
+      display: block;
+      padding: 0 24px;
+      padding-top: 50px; }
+      .__index__section--even .__index__content {
+        padding-left: 0; }
+      .__index__section:first-child {
+        padding-top: 0; }
+    .__index__background {
+      margin-top: 25px; }
+    .__index__network {
+      display: block;
+      padding-left: 24px;
+      padding-right: 24px; }
+    .__index__column {
+      margin-bottom: 50px; } }
 
 .__main__side-nav {
   width: 224px;
   min-width: 224px;
   padding-right: 32px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  position: fixed;
+  top: 95px;
+  left: 0;
+  bottom: 0;
+  padding-top: 5px;
+  overflow-y: auto; }
   .__main__side-nav .rocket__menu {
     margin-left: 3px; }
     .__main__side-nav .rocket__menu__title {
@@ -155,11 +171,15 @@
     width: 100%; }
 
 @media only screen and (max-width: 768px) {
+  .__header {
+    height: 150px; }
   .__main {
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 150px; }
     .__main__side-nav {
+      position: static;
       order: 1;
-      padding-top: 24px;
+      padding-top: 155px;
       padding-right: 0;
       width: auto;
       margin-right: 0; }
@@ -168,6 +188,7 @@
     .__main .__side-nav__menu {
       padding-right: 3px; }
     .__main__content {
+      position: static;
       padding: 0 24px; } }
 
 .__main__content--style-colour .__color {
@@ -598,10 +619,15 @@ pre[class*="language-"] {
 
 .__component {
   padding-right: 52px;
+  padding-left: 52px;
+  position: absolute;
+  top: 95px;
+  left: 256px;
   /* Override Markdown */ }
   @media only screen and (max-width: 768px) {
     .__component {
-      padding: 0 24px; } }
+      padding: 0 24px;
+      position: static; } }
   .__component--radio-button .rocket__label, .__component--checkbox .rocket__label {
     margin-right: 20px; }
   .__component--button .rocket__button {
@@ -617,6 +643,13 @@ pre[class*="language-"] {
     width: 360px; }
   .__component .rocket h4, .__component .rocket h5, .__component .rocket h6 {
     margin-top: 0; }
+
+.__main__content--guidelines {
+  margin-left: 308px; }
+  @media only screen and (max-width: 768px) {
+    .__main__content--guidelines {
+      margin-left: 0;
+      padding-right: 24px; } }
 
 html, body {
   margin: 0;
