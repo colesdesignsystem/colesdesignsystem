@@ -51,7 +51,15 @@
 
 .__main {
   display: flex;
-  flex-grow: 1; }
+  flex-grow: 1;
+  flex-direction: column; }
+  .__main__components {
+    margin-top: 95px;
+    margin-left: 256px; }
+    @media only screen and (max-width: 768px) {
+      .__main__components {
+        margin-left: 0;
+        margin-top: 0; } }
   .__main__content {
     margin-top: 95px;
     padding-right: 52px; }
@@ -59,15 +67,14 @@
       .__main__content {
         margin-top: 0;
         padding-right: 24px; } }
-
-.__footer {
-  padding: 12px 52px;
-  text-align: right; }
-  @media only screen and (max-width: 768px) {
-    .__footer {
-      padding: 12px 24px; } }
-  .__footer .__updated-at {
-    color: #3f4140; }
+  .__main__footer {
+    padding: 12px 52px;
+    text-align: right; }
+    @media only screen and (max-width: 768px) {
+      .__main__footer {
+        padding: 12px 24px; } }
+    .__main__footer .__updated-at {
+      color: #3f4140; }
 
 .__index {
   width: 100%;
@@ -625,14 +632,10 @@ pre[class*="language-"] {
 .__component {
   padding-right: 52px;
   padding-left: 52px;
-  position: absolute;
-  top: 95px;
-  left: 256px;
   /* Override Markdown */ }
   @media only screen and (max-width: 768px) {
     .__component {
-      padding: 0 24px;
-      position: static; } }
+      padding: 0 24px; } }
   .__component--radio-button .rocket__label, .__component--checkbox .rocket__label {
     margin-right: 20px; }
   .__component--button .rocket__button {
