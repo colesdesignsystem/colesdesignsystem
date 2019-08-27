@@ -636,7 +636,7 @@ pre[class*="language-"] {
   .__component--radio-button .rocket__label, .__component--checkbox .rocket__label {
     margin-right: 20px; }
   .__component--button .rocket__button {
-    margin: 2px; }
+    margin: 0 4px; }
   .__component--radio-dialog .rocket__radio-dialog {
     margin: 10px; }
   .__component--select .rocket__select {
@@ -646,6 +646,8 @@ pre[class*="language-"] {
     margin-right: 20px; }
   .__component--thumbnail .rocket__thumbnail .rocket__thumbnail__image {
     width: 360px; }
+  .__component--navbar .rocket__nav--pill .rocket__nav__item {
+    margin: 0 4px; }
   .__component .rocket h4, .__component .rocket h5, .__component .rocket h6 {
     margin-top: 0; }
 
