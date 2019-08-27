@@ -283,35 +283,6 @@
     font-size: 16px;
     line-height: 22px; }
 
-.__main__content--component-radio-button .rocket__label {
-  margin-right: 20px; }
-
-.__main__content--component-checkbox .rocket__label {
-  margin-right: 20px; }
-
-.__main__content--component-select .rocket__select {
-  width: 150px; }
-
-.__main__content--component-button .rocket__button {
-  margin: 5px; }
-
-.__main__content--component-dialog .rocket__dialog {
-  max-width: 600px;
-  min-width: 350px; }
-
-.__main__content--component-thumbnail img {
-  width: 360px; }
-
-.__main__content--component-radio-dialog .rocket__radio-dialog {
-  margin: 10px; }
-
-.__main__content--component-tag .rocket__tag {
-  margin-right: 10px; }
-
-.__main__content--tooltip .rocket__tooltip {
-  margin-left: 20px;
-  margin-right: 20px; }
-
 .__section__header {
   margin-bottom: 15px; }
 
@@ -639,7 +610,7 @@ pre[class*="language-"] {
   .__component--radio-button .rocket__label, .__component--checkbox .rocket__label {
     margin-right: 20px; }
   .__component--button .rocket__button {
-    margin: 4px; }
+    margin: 6px; }
   .__component--radio-dialog .rocket__radio-dialog {
     margin: 10px; }
   .__component--select .rocket__select {
