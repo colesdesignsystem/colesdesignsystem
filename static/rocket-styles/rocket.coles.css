@@ -72,10 +72,10 @@
     color: #c70007; }
   .rocket .rocket__d1--primary,
   .rocket__d1--primary {
-    color: #E01A22FF; }
+    color: #E01A22; }
   .rocket .rocket__d1--primary-dark,
   .rocket__d1--primary-dark {
-    color: #C70007FF; }
+    color: #C70007; }
 
 .rocket .rocket__d2,
 .rocket__d2 {
@@ -134,10 +134,10 @@
     color: #c70007; }
   .rocket .rocket__d2--primary,
   .rocket__d2--primary {
-    color: #E01A22FF; }
+    color: #E01A22; }
   .rocket .rocket__d2--primary-dark,
   .rocket__d2--primary-dark {
-    color: #C70007FF; }
+    color: #C70007; }
 
 .rocket .rocket h1, .rocket .rocket__h1,
 .rocket h1,
@@ -214,11 +214,11 @@
   .rocket .rocket h1--primary, .rocket .rocket__h1--primary,
   .rocket h1--primary,
   .rocket__h1--primary {
-    color: #E01A22FF; }
+    color: #E01A22; }
   .rocket .rocket h1--primary-dark, .rocket .rocket__h1--primary-dark,
   .rocket h1--primary-dark,
   .rocket__h1--primary-dark {
-    color: #C70007FF; }
+    color: #C70007; }
 
 .rocket .rocket h2, .rocket .rocket__h2,
 .rocket h2,
@@ -295,11 +295,11 @@
   .rocket .rocket h2--primary, .rocket .rocket__h2--primary,
   .rocket h2--primary,
   .rocket__h2--primary {
-    color: #E01A22FF; }
+    color: #E01A22; }
   .rocket .rocket h2--primary-dark, .rocket .rocket__h2--primary-dark,
   .rocket h2--primary-dark,
   .rocket__h2--primary-dark {
-    color: #C70007FF; }
+    color: #C70007; }
 
 .rocket .rocket h3, .rocket .rocket__h3,
 .rocket h3,
@@ -376,11 +376,11 @@
   .rocket .rocket h3--primary, .rocket .rocket__h3--primary,
   .rocket h3--primary,
   .rocket__h3--primary {
-    color: #E01A22FF; }
+    color: #E01A22; }
   .rocket .rocket h3--primary-dark, .rocket .rocket__h3--primary-dark,
   .rocket h3--primary-dark,
   .rocket__h3--primary-dark {
-    color: #C70007FF; }
+    color: #C70007; }
 
 .rocket .rocket h4, .rocket .rocket__h4,
 .rocket h4,
@@ -457,11 +457,11 @@
   .rocket .rocket h4--primary, .rocket .rocket__h4--primary,
   .rocket h4--primary,
   .rocket__h4--primary {
-    color: #E01A22FF; }
+    color: #E01A22; }
   .rocket .rocket h4--primary-dark, .rocket .rocket__h4--primary-dark,
   .rocket h4--primary-dark,
   .rocket__h4--primary-dark {
-    color: #C70007FF; }
+    color: #C70007; }
 
 .rocket .rocket h5, .rocket .rocket__h5,
 .rocket h5,
@@ -538,11 +538,11 @@
   .rocket .rocket h5--primary, .rocket .rocket__h5--primary,
   .rocket h5--primary,
   .rocket__h5--primary {
-    color: #E01A22FF; }
+    color: #E01A22; }
   .rocket .rocket h5--primary-dark, .rocket .rocket__h5--primary-dark,
   .rocket h5--primary-dark,
   .rocket__h5--primary-dark {
-    color: #C70007FF; }
+    color: #C70007; }
 
 .rocket .rocket h6, .rocket .rocket__h6,
 .rocket h6,
@@ -622,11 +622,11 @@
   .rocket .rocket h6--primary, .rocket .rocket__h6--primary,
   .rocket h6--primary,
   .rocket__h6--primary {
-    color: #E01A22FF; }
+    color: #E01A22; }
   .rocket .rocket h6--primary-dark, .rocket .rocket__h6--primary-dark,
   .rocket h6--primary-dark,
   .rocket__h6--primary-dark {
-    color: #C70007FF; }
+    color: #C70007; }
 
 @media only screen and (max-width: 768px) {
   .rocket .rocket__d1, .rocket .rocket__d2,
@@ -704,11 +704,11 @@
     .rocket .rocket__d1--primary, .rocket .rocket__d2--primary,
     .rocket__d1--primary,
     .rocket__d2--primary {
-      color: #E01A22FF; }
+      color: #E01A22; }
     .rocket .rocket__d1--primary-dark, .rocket .rocket__d2--primary-dark,
     .rocket__d1--primary-dark,
     .rocket__d2--primary-dark {
-      color: #C70007FF; } }
+      color: #C70007; } }
 
 .rocket .rocket__font,
 .rocket__font {
@@ -751,7 +751,7 @@
 .rocket em,
 .rocket__em {
   font-family: "Source Sans", sans-serif;
-  color: #E01A22FF;
+  color: #E01A22;
   font-style: italic; }
 
 .rocket .rocket__select,
@@ -855,7 +855,7 @@
 .rocket__a {
   position: relative;
   font-family: "Source Sans", sans-serif;
-  color: #E01A22FF;
+  color: #E01A22;
   display: inline-block;
   text-decoration: underline;
   outline: none; }
@@ -875,13 +875,13 @@
   .rocket a:focus,
   .rocket__a:hover,
   .rocket__a:focus {
-    color: #E01A22FF; }
+    color: #E01A22; }
     .rocket .rocket a:hover:before, .rocket .rocket a:focus:before, .rocket .rocket__a:hover:before, .rocket .rocket__a:focus:before,
     .rocket a:hover:before,
     .rocket a:focus:before,
     .rocket__a:hover:before,
     .rocket__a:focus:before {
-      box-shadow: 0 0 0 2px #E01A22FF; }
+      box-shadow: 0 0 0 2px #E01A22; }
     .rocket .rocket a:hover:active, .rocket .rocket a:focus:active, .rocket .rocket__a:hover:active, .rocket .rocket__a:focus:active,
     .rocket a:hover:active,
     .rocket a:focus:active,
@@ -904,7 +904,7 @@
     .rocket a:visited:focus,
     .rocket__a:visited:hover,
     .rocket__a:visited:focus {
-      color: #E01A22FF; }
+      color: #E01A22; }
       .rocket .rocket a:visited:hover:active, .rocket .rocket a:visited:focus:active, .rocket .rocket__a:visited:hover:active, .rocket .rocket__a:visited:focus:active,
       .rocket a:visited:hover:active,
       .rocket a:visited:focus:active,
@@ -923,8 +923,8 @@
   display: inline-block;
   padding: 2px 8px;
   border-radius: 20px;
-  color: #FFFFFFFF;
-  background: #E01A22FF;
+  color: #FFFFFF;
+  background: #E01A22;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 2px; }
@@ -1058,26 +1058,26 @@
     margin-left: 6px; }
   .rocket .rocket__button--primary,
   .rocket__button--primary {
-    background-color: #E01A22FF;
-    color: #FFFFFFFF;
-    border-color: #E01A22FF; }
+    background-color: #E01A22;
+    color: #FFFFFF;
+    border-color: #E01A22; }
     .rocket .rocket__button--primary g,
     .rocket__button--primary g {
       opacity: 1; }
     .rocket .rocket__button--primary polygon,
     .rocket__button--primary polygon {
       opacity: 1;
-      stroke: #FFFFFFFF; }
+      stroke: #FFFFFF; }
     .rocket .rocket__button--primary line,
     .rocket__button--primary line {
-      stroke: #FFFFFFFF; }
+      stroke: #FFFFFF; }
     .rocket .rocket__button--primary path,
     .rocket__button--primary path {
-      stroke: #FFFFFFFF; }
+      stroke: #FFFFFF; }
     .rocket .rocket__button--primary:hover, .rocket .rocket__button--primary:focus,
     .rocket__button--primary:hover,
     .rocket__button--primary:focus {
-      color: #FFFFFFFF; }
+      color: #FFFFFF; }
       .rocket .rocket__button--primary:hover g, .rocket .rocket__button--primary:focus g,
       .rocket__button--primary:hover g,
       .rocket__button--primary:focus g {
@@ -1086,20 +1086,20 @@
       .rocket__button--primary:hover polygon,
       .rocket__button--primary:focus polygon {
         opacity: 1;
-        stroke: #FFFFFFFF; }
+        stroke: #FFFFFF; }
       .rocket .rocket__button--primary:hover line, .rocket .rocket__button--primary:focus line,
       .rocket__button--primary:hover line,
       .rocket__button--primary:focus line {
-        stroke: #FFFFFFFF; }
+        stroke: #FFFFFF; }
       .rocket .rocket__button--primary:hover path, .rocket .rocket__button--primary:focus path,
       .rocket__button--primary:hover path,
       .rocket__button--primary:focus path {
-        stroke: #FFFFFFFF; }
+        stroke: #FFFFFF; }
       .rocket .rocket__button--primary:hover:active, .rocket .rocket__button--primary:focus:active,
       .rocket__button--primary:hover:active,
       .rocket__button--primary:focus:active {
-        background-color: #C70007FF;
-        border-color: #E01A22FF; }
+        background-color: #C70007;
+        border-color: #E01A22; }
   .rocket .rocket__button--tertiary,
   .rocket__button--tertiary {
     border-color: transparent;
@@ -1558,17 +1558,17 @@
   .rocket .rocket__nav--primary .rocket__nav__item,
   .rocket__nav--primary .rocket__nav__item {
     color: white;
-    background-color: #E01A22FF; }
+    background-color: #E01A22; }
     .rocket .rocket__nav--primary .rocket__nav__item:hover, .rocket .rocket__nav--primary .rocket__nav__item:focus,
     .rocket__nav--primary .rocket__nav__item:hover,
     .rocket__nav--primary .rocket__nav__item:focus {
-      background-color: #E01A22FF;
+      background-color: #E01A22;
       color: white;
       box-shadow: 0 0 0 5px #20211f; }
       .rocket .rocket__nav--primary .rocket__nav__item:hover:active, .rocket .rocket__nav--primary .rocket__nav__item:focus:active,
       .rocket__nav--primary .rocket__nav__item:hover:active,
       .rocket__nav--primary .rocket__nav__item:focus:active {
-        background-color: #C70007FF;
+        background-color: #C70007;
         border: none;
         color: white; }
       .rocket .rocket__nav--primary .rocket__nav__item:hover:after, .rocket .rocket__nav--primary .rocket__nav__item:focus:after,
@@ -1591,11 +1591,11 @@
     .rocket .rocket__nav--primary .rocket__nav__item--active,
     .rocket__nav--primary .rocket__nav__item--active {
       border: 0;
-      background-color: #C70007FF; }
+      background-color: #C70007; }
       .rocket .rocket__nav--primary .rocket__nav__item--active:hover, .rocket .rocket__nav--primary .rocket__nav__item--active:focus,
       .rocket__nav--primary .rocket__nav__item--active:hover,
       .rocket__nav--primary .rocket__nav__item--active:focus {
-        background-color: #C70007FF; }
+        background-color: #C70007; }
       .rocket .rocket__nav--primary .rocket__nav__item--active:before,
       .rocket__nav--primary .rocket__nav__item--active:before {
         background-color: white; }
@@ -1651,7 +1651,7 @@
         background-color: #20211f; }
       .rocket .rocket__nav--secondary .rocket__nav__item--active:before,
       .rocket__nav--secondary .rocket__nav__item--active:before {
-        background-color: #E01A22FF;
+        background-color: #E01A22;
         bottom: -1px; }
   .rocket .rocket__nav.rocket__nav--vertical .rocket__nav__item,
   .rocket__nav.rocket__nav--vertical .rocket__nav__item {
@@ -1681,7 +1681,7 @@
         top: 0;
         bottom: 0;
         width: 4px;
-        background-color: #E01A22FF; }
+        background-color: #E01A22; }
   .rocket .rocket__nav.rocket__nav--pill .rocket__nav__item,
   .rocket__nav.rocket__nav--pill .rocket__nav__item {
     border-radius: 44px;
@@ -1704,9 +1704,9 @@
         background-color: transparent; }
     .rocket .rocket__nav.rocket__nav--pill .rocket__nav__item--active,
     .rocket__nav.rocket__nav--pill .rocket__nav__item--active {
-      background-color: #E01A22FF;
+      background-color: #E01A22;
       border: 0;
-      color: #FFFFFFFF;
+      color: #FFFFFF;
       text-decoration: none; }
       .rocket .rocket__nav.rocket__nav--pill .rocket__nav__item--active:before,
       .rocket__nav.rocket__nav--pill .rocket__nav__item--active:before {
@@ -1719,7 +1719,7 @@
     padding: 2px 8px;
     border-radius: 100px;
     background-color: white;
-    color: #E01A22FF;
+    color: #E01A22;
     font-size: 14px;
     line-height: 19px;
     margin-left: 8px; }
@@ -1764,17 +1764,17 @@
     .rocket__toolbar__item:focus:active {
       margin-top: 2px;
       margin-bottom: 2px;
-      background-color: #C70007FF;
+      background-color: #C70007;
       box-shadow: none;
-      border: 1px solid #C70007FF;
+      border: 1px solid #C70007;
       padding-left: 21px;
       padding-right: 21px;
       color: white; }
   .rocket .rocket__toolbar__item--active,
   .rocket__toolbar__item--active {
-    color: #FFFFFFFF;
-    background-color: #E01A22FF;
-    border: 1px solid #E01A22FF;
+    color: #FFFFFF;
+    background-color: #E01A22;
+    border: 1px solid #E01A22;
     z-index: 0; }
     .rocket .rocket__toolbar__item--active:hover, .rocket .rocket__toolbar__item--active:focus,
     .rocket__toolbar__item--active:hover,
@@ -1870,8 +1870,8 @@
     display: inline-block;
     padding: 2px 8px;
     border-radius: 100px;
-    color: #FFFFFFFF;
-    background: #E01A22FF;
+    color: #FFFFFF;
+    background: #E01A22;
     font-size: 14px;
     line-height: 19px;
     letter-spacing: 2px;
@@ -2159,7 +2159,7 @@
     left: 0; }
   .rocket .rocket__menu__title--active:before,
   .rocket__menu__title--active:before {
-    background-color: #E01A22FF; }
+    background-color: #E01A22; }
 
 .rocket .rocket__submenu__title,
 .rocket__submenu__title {
@@ -2191,7 +2191,7 @@
     font-family: "Source Sans", sans-serif;
     font-weight: 600;
     text-decoration: underline;
-    color: #E01A22FF;
+    color: #E01A22;
     display: block; }
 
 .rocket .rocket__pagination__prev, .rocket .rocket__pagination__next, .rocket .rocket__pagination__page,
@@ -2235,8 +2235,8 @@
 
 .rocket .rocket__pagination__page--active,
 .rocket__pagination__page--active {
-  background-color: #E01A22FF;
-  color: #FFFFFFFF; }
+  background-color: #E01A22;
+  color: #FFFFFF; }
 
 .rocket .rocket__pagination__prev, .rocket .rocket__pagination__next,
 .rocket__pagination__prev,
