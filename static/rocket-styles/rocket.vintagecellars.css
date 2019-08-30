@@ -1406,8 +1406,8 @@
       .rocket .rocket__dialog--error .rocket__dialog__title:before,
       .rocket__dialog--error .rocket__dialog__title:before {
         background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 16 16' aria-hidden='true' focusable='false'%3E%3Cg %3E%3Cline x1='8' y1='9' x2='8' y2='6.5' fill='none' stroke='%23e01a22' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2'/%3E%3C/g%3E%3Cg %3E%3Cline x1='8' y1='11.5' x2='8' y2='11.51' fill='none' stroke='%23e01a22' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2'/%3E%3C/g%3E%3Cpolygon points='8 2 1 14 15 14 8 2' fill='none' stroke='%23e01a22' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' /%3E%3C/svg%3E%0A"); }
-  .rocket .rocket__dialog__close,
-  .rocket__dialog__close {
+  .rocket .rocket__dialog__cross,
+  .rocket__dialog__cross {
     position: absolute;
     width: 16px;
     height: 16px;
@@ -1421,16 +1421,16 @@
     transition: box-shadow 0.2s;
     background-color: transparent;
     border: none; }
-    .rocket .rocket__dialog__close:hover, .rocket .rocket__dialog__close:focus,
-    .rocket__dialog__close:hover,
-    .rocket__dialog__close:focus {
+    .rocket .rocket__dialog__cross:hover, .rocket .rocket__dialog__cross:focus,
+    .rocket__dialog__cross:hover,
+    .rocket__dialog__cross:focus {
       outline: none;
       box-shadow: 0 0 0 3px #20211f;
       background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='-8 -8 32 32' aria-hidden='true' focusable='false'%3E%3Cg%3E%3Cline x1='3' y1='3' x2='13' y2='13' fill='none' stroke='%2320211f' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'/%3E%3Cline x1='3' y1='13' x2='13' y2='3' fill='none' stroke='%2320211f' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'/%3E%3C/g%3E%3C/svg%3E");
       background-repeat: no-repeat; }
-      .rocket .rocket__dialog__close:hover:active, .rocket .rocket__dialog__close:focus:active,
-      .rocket__dialog__close:hover:active,
-      .rocket__dialog__close:focus:active {
+      .rocket .rocket__dialog__cross:hover:active, .rocket .rocket__dialog__cross:focus:active,
+      .rocket__dialog__cross:hover:active,
+      .rocket__dialog__cross:focus:active {
         box-shadow: none;
         background-color: #e8e8e8;
         background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='-8 -8 32 32' aria-hidden='true' focusable='false'%3E%3Cg%3E%3Cline x1='3' y1='3' x2='13' y2='13' fill='none' stroke='%2320211f' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'/%3E%3Cline x1='3' y1='13' x2='13' y2='3' fill='none' stroke='%2320211f' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'/%3E%3C/g%3E%3C/svg%3E");
@@ -1794,8 +1794,8 @@
   color: #6e6e6e;
   position: relative;
   background-color: white; }
-  .rocket .rocket__tag__close,
-  .rocket__tag__close {
+  .rocket .rocket__tag__cross,
+  .rocket__tag__cross {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -1807,14 +1807,14 @@
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='-8 -8 32 32' aria-hidden='true' focusable='false'%3E%3Cg%3E%3Cline x1='3' y1='3' x2='13' y2='13' fill='none' stroke='%236e6e6e' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'/%3E%3Cline x1='3' y1='13' x2='13' y2='3' fill='none' stroke='%236e6e6e' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'/%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
     transition: box-shadow 0.2s; }
-    .rocket .rocket__tag__close:hover,
-    .rocket__tag__close:hover {
+    .rocket .rocket__tag__cross:hover,
+    .rocket__tag__cross:hover {
       background-color: white;
       box-shadow: 0 0 0 3px #20211f;
       background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='-8 -8 32 32' aria-hidden='true' focusable='false'%3E%3Cg%3E%3Cline x1='3' y1='3' x2='13' y2='13' fill='none' stroke='%2320211f' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'/%3E%3Cline x1='3' y1='13' x2='13' y2='3' fill='none' stroke='%2320211f' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'/%3E%3C/g%3E%3C/svg%3E");
       background-repeat: no-repeat; }
-      .rocket .rocket__tag__close:hover:active,
-      .rocket__tag__close:hover:active {
+      .rocket .rocket__tag__cross:hover:active,
+      .rocket__tag__cross:hover:active {
         box-shadow: none;
         background-color: #e8e8e8; }
 

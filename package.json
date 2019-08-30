@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "find -maxdepth 1 ! -name .git ! -name downloads ! -name README.md ! -name package.json ! -name . -exec rm -rv {} \\;",
     "copy:main": "rsync -av ../rocket-website/dist/ ./ --exclude .git",
-    "copy:downloads": "cp ../rocket-styles/dist/* ./downloads",
+    "copy:downloads": "cp ../rocket-styles/dist/* ./downloads && cp ../rocket-react/dist/*.tgz ./downloads",
     "copy:storybook": "mkdir storybook && cp -av ../rocket-react/dist/storybook/* ./storybook",
     "build": "npm run clean && npm run copy:main && npm run copy:downloads && npm run copy:storybook"
   },
