@@ -2604,7 +2604,7 @@
     color: #20211f;
     background-color: white;
     box-shadow: 0 1px 5px 0 #E8E8E8;
-    display: block;
+    display: none;
     transform: translate(0, -50%);
     top: 8px;
     left: 26px;
@@ -2632,7 +2632,8 @@
   .rocket .rocket__tooltip--shown .rocket__tooltip__content,
   .rocket__tooltip--shown .rocket__tooltip__content {
     transition: opacity 0.2s;
-    opacity: 1; }
+    opacity: 1;
+    display: block; }
   .rocket .rocket__tooltip--left .rocket__tooltip__content,
   .rocket__tooltip--left .rocket__tooltip__content {
     transform: translate(-100%, -50%);
