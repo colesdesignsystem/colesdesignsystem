@@ -2441,7 +2441,9 @@
 .rocket .rocket__listbox,
 .rocket__listbox {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
-  background-color: white; }
+  background-color: white;
+  padding: 0;
+  margin: 0; }
   .rocket .rocket__listbox__option,
   .rocket__listbox__option {
     padding: 8px 40px 8px 12px;
@@ -2451,6 +2453,7 @@
     color: #6e6e6e;
     background-color: white;
     position: relative;
+    list-style: none;
     transition: box-shadow 0.2s; }
     .rocket .rocket__listbox__option:hover, .rocket .rocket__listbox__option:focus, .rocket .rocket__listbox__option--focused,
     .rocket__listbox__option:hover,
@@ -2466,6 +2469,9 @@
         box-shadow: none;
         color: #20211f;
         background-color: #e8e8e8; }
+    .rocket .rocket__listbox__option:before,
+    .rocket__listbox__option:before {
+      display: none; }
     .rocket .rocket__listbox__option--selected,
     .rocket__listbox__option--selected {
       color: #20211f;
