@@ -1452,11 +1452,11 @@
     line-height: 22px;
     /* for p */
     margin: 0 0 24px 0; }
-  .rocket .rocket__dialog__buttons,
-  .rocket__dialog__buttons {
+  .rocket .rocket__dialog__actions,
+  .rocket__dialog__actions {
     text-align: right; }
-    .rocket .rocket__dialog__buttons .rocket__button,
-    .rocket__dialog__buttons .rocket__button {
+    .rocket .rocket__dialog__actions .rocket__button,
+    .rocket__dialog__actions .rocket__button {
       margin-left: 12px; }
 
 .rocket .rocket,
